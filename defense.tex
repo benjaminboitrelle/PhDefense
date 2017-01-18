@@ -1,0 +1,78 @@
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+
+%-----------------------------
+%           PACKAGES
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{eulervm}
+\usepackage[scaled]{helvet}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning,arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\usetheme{Warsaw}
+\usefonttheme[onlymath]{serif}
+\usecolortheme{Ben}
+%\usecolortheme{fly}
+
+\newcommand{\grille}{
+    \begin{tikzpicture}[overlay,remember picture]
+        \begin{scope}[shift={(current page.south west)}]
+            \draw[gray!50] (0,0) grid[step=2mm] (current page.north east);
+            \draw[red!50] (0,0) grid[step=1cm] (current page.north east);
+            \draw (0.2,1) node {1};
+            \draw (0.2,2) node {2};
+            \draw (0.2,3) node {3};
+            \draw (0.2,4) node {4};
+            \draw (0.2,5) node {5};
+            \draw (0.2,6) node {6};
+            \draw (0.2,7) node {7};
+            \draw (0.2,8) node {8};
+            \draw (0.2,9) node {9};
+            \draw (1,0.5) node {1};
+            \draw (2,0.5) node {2};
+            \draw (3,0.5) node {3};
+            \draw (4,0.5) node {4};
+            \draw (5,0.5) node {5};
+            \draw (6,0.5) node {6};
+            \draw (7,0.5) node {7};
+            \draw (8,0.5) node {8};
+            \draw (9,0.5) node {9};
+            \draw (10,0.5) node {10};
+            \draw (11,0.5) node {11};
+            \draw (12,0.5) node {12};
+        \end{scope}
+    \end{tikzpicture}
+}
+\newcommand{\degres}{\ensuremath{^\circ}}
+\title[Ph. D. defense]{Développement d'une échelle double face pour la trajectométrie en physique des hautes énergies.}
+\subtitle{Ph. D. defense}
+\institute{DESY}
+\author[Benjamin BOITRELLE]{Benjamin BOITRELLE  \\ Supervisors: Jérôme Baudot, Ingrid Maria Gregor} %\\ On behalf of the PLUME Collaboration
+\date{February 13, 2017}
+\defbeamertemplate*{footline}{shadow theme}
+%\titlegraphic{\includegraphics[scale = 0.08]{Pictures/DESY-Logo.png}}
+{%
+    \leavevmode%
+    \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertshorttitle%
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+\begin{document}
+
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+\end{document}

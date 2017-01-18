@@ -1,0 +1,91 @@
+\ProvidesPackage{beamercolorthemeBen}[2014/10/23 1.0.0 My own color theme for beamer]
+\RequirePackage{etoolbox}
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+  family=Ben,
+  prefix=Ben@,
+}
+
+\definecolor{chanvre}{RGB}{245,239,227}
+\definecolor{lin}{RGB}{220,211,196}
+\definecolor{taupe}{RGB}{119,101,91}
+\definecolor{myrtille}{RGB}{67,103,125}
+\definecolor{bleuMyrtille}{RGB}{77,113,135}
+\definecolor{rougeBordeaux}{RGB}{169,57,56}
+%\definecolor{canelle}{RGB}{143,108,89}
+%\definecolor{sesame}{RGB}{198,173,133}
+\definecolor{grisSauvage}{RGB}{139,133,109}
+\definecolor{ardoise}{RGB}{86,105,109}
+\definecolor{plume}{RGB}{239,253,224}
+\definecolor{chocolat}{RGB}{74,32,8}
+%\definecolor{pistache}{RGB}{204,247,226}
+
+%\setbeamercolor{block title}{...}
+%\setbeamercolor{block body}{...}
+%\setbeamercolor{block title example}{...}
+%\setbeamercolor{block body example}{...}
+%\setbeamercolor{block title alerted}{bg=rougeBordeaux, fg=chanvre}
+%\setbeamercolor{block body alerted}{bg=rougeBordeaux, fg=myrtille}
+
+%\setbeamercolor{structure}{bg=chanvre,fg=myrtille}
+%\setbeamercolor{title}{bg=myrtille,fg=chanvre}
+%\setbeamercolor{background canvas}{bg=chanvre}
+%\setbeamercolor{normal text}{fg=bleuMyrtille} % En remplaçant (couleur) par la couleur que vous souhaitez
+
+
+\mode<presentation>
+
+\setbeamercolor{normal text}{fg=bleuMyrtille, bg=chanvre}
+%\setbeamercolor{background canvas}{bg=chanvre}
+\setbeamercolor{alerted text}{fg=chanvre, bg=rougeBordeaux}
+% based css pre element 
+%\setbeamercolor{example text}{fg=solarizedRebase1, bg=solarizedRebase02}
+
+% Header and footer from CSS 
+%\setbeamercolor{footline}{bg=solarizedRebase02,fg=solarizedRebase01}
+%\setbeamercolor{headline}{bg=solarizedRebase01,fg=solarizedRebase1}
+
+% Titles
+\setbeamercolor*{titlelike}{bg=myrtille,fg=chanvre}
+\setbeamercolor*{frametitle}{bg=myrtille,fg=chanvre}
+\setbeamercolor*{title}{bg=myrtille,fg=chanvre}
+
+% Structure elements use css style for header 
+\setbeamercolor*{structure}{bg=chanvre,fg=myrtille}
+
+% Do not mess with subtle colors in palette. I don't like it. 
+%\setbeamercolor*{palette primary}{bg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette secondary}{bg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette tertiary}{bg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette quaternary}{bg=solarizedRebase01, fg=solarizedRebase1}
+
+% Make Blocks slightly lighter/darker
+\setbeamercolor{block title}{bg=bleuMyrtille, fg=chanvre}
+\setbeamercolor{block title alerted}{bg=rougeBordeaux,fg=chanvre}
+%\setbeamercolor{block title example}{bg=pistache,fg=chanvre}
+
+%\setbeamercolor{block body}{parent=normal text, bg=solarizedRebase02}
+% \setbeamercolor{block body alerted}{}
+% \setbeamercolor{block body example}{}
+
+% same as footline
+% Set Sidebar and footline to use the css style for footer
+\setbeamercolor*{sidebar}{parent=headline}
+%\setbeamercolor*{palette sidebar primary}{fg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette sidebar secondary}{fg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette sidebar tertiary}{fg=solarizedRebase01, fg=solarizedRebase1}
+%\setbeamercolor*{palette sidebar quaternary}{fg=solarizedRebase01, fg=solarizedRebase1}
+
+% border-color for headings
+\setbeamercolor{separation line}{fg=bleuMyrtille}
+\setbeamercolor{fine separation line}{fg=bleuMyrtille}
+
+%\setbeamercolor*{section in sidebar shaded}{parent=palette sidebar primary}
+% a.hover.navlink in CSS
+%\setbeamercolor*{section in sidebar}{parent=palette sidebar primary, fg=solarizedRebase02}
+%\setbeamercolor*{subsection in sidebar}{parent=section in sidebar}
+%\setbeamercolor*{subsection in sidebar shaded}{parent=section in sidebar shaded}
+
+\mode
+<all>
