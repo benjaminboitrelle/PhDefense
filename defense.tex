@@ -12,6 +12,8 @@
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{tikz}
 \usepackage{multicol}
+\usepackage{array,multirow,makecell}
+\usepackage{color}
 
 \usetheme{Warsaw}
 %\usetheme{Antibes}
@@ -22,6 +24,8 @@
 \usecolortheme{Ben}
 %\usecolortheme{fly}
 
+
+\newcolumntype{K}[1]{>{\centering\arraybackslash}p{#1}}
 
 \makeatletter
 \def\insertsectionnavigation#1{%
@@ -196,11 +200,32 @@
     \subsection{Standard Model}
 
     \begin{frame}
-      \frametitle{Standard Model}
+      %\frametitle{Standard Model}
+      \frametitle{What is the Universe made of?}
 
+     \begin{block}{Matter:}
       \begin{center}
-        \includegraphics[width = 0.6\textwidth]{Pictures/elementaryParticles.jpg}
+        \begin{tabular}{c c c c c c c}
+        \multirow{3}*{\only<1->{Fermions}} & \multicolumn{3}{ c }{\only<2->{Leptons}} & \multicolumn{3}{ c }{\only<4->{Quarks}} \tabularnewline
+          & \only<3->{$e^-$ & $\mu$ & $\tau$} & \only<5->{$u$ & $c$ & $t$} \tabularnewline 
+          & \only<3->{$\nu_{e}$ & $\nu_{\mu}$ & $\nu_{\tau}$} & \only<5->{$d$ & $s$ & $b$ } \tabularnewline 
+          
+        \end{tabular}
+        %\includegraphics[width = 0.6\textwidth]{Pictures/elementaryParticles.jpg}
       \end{center}
+      \end{block}
+      \only<6->{\begin{block}{Forces:}
+      \begin{center}
+        \begin{tabular}{c c c c}
+        \multirow{5}*{\only<6->{Bosons}} & \only<7->{$\gamma$} & \only<7->{$\rightarrow$} & \only<7->{E.M. interaction} \tabularnewline
+        & \only<8->{$Z^{0}/W^{\pm}$} & \only<8->{$\rightarrow$} & \only<8->{Weak interaction} \tabularnewline
+        & \only<9->{$g$ & $\rightarrow$} & \only<9->{Strong interaction} \tabularnewline
+        & \only<10->{\textcolor{gray}{graviton} & \textcolor{gray}{$\rightarrow$}} & \only<10->{\textcolor{gray}{Gravitation}} \tabularnewline
+        %\only<11->{\hline}
+        & \only<11->{$H$ & $\rightarrow$} & \only<11->{Higgs field} \tabularnewline
+        \end{tabular}
+      \end{center}
+      \end{block}}
 
     \end{frame}
 
@@ -278,7 +303,6 @@
 %                           Intro: ILD VS SiD 
 %-------------------------------
 
-\subsection{The two experiments at the ILC}
 \begin{frame}
   \frametitle{SiD and ILD}
 
@@ -327,38 +351,69 @@
   \begin{frame}[label=vxd]
     \frametitle{The ILD Vertex Detector}
 
-    \vspace{-0.25cm}
-    \begin{alertblock}{The ILC vertex detector requirements}
+    \vspace{-0.3cm}
+    \begin{block}{Two geometry options}
+      \begin{center}
+        \includegraphics[width = 6 cm,height = 2.8cm]{Pictures/ild_VXD.png}
+      \end{center}
+      \vspace{-0.5cm}
+      \begin{columns}[t]
+        \begin{column}{3cm}
+          5 single-sided layers
+        \end{column}
+        \begin{column}{3cm}
+          3 double-sided layers
+        \end{column}
+      \end{columns}
+    \end{block}
+
+    \vspace{-0.2cm}
+    \begin{alertblock}{Impact parameter resolution}
         \begin{itemize}
-            %\item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
-            %\item Hit resolution: $a \simeq 5 \mu m \Rightarrow \ \sigma_{spatial} < 3 \mu m$
-            %\item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15 \% \ X_0 $ for an excellent flavour tagging performance. 
-            \item Spatial resolution: $< \ 3~\mu m$
-            \item Material budget per measurement point: $\simeq 0.15~\%~X_0 $
+            \item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
+            \item Hit resolution: $a \simeq 5 \mu m \Rightarrow ~ \sigma_{spatial} < 3 \mu m$
+            \item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15~\%$ X$_0$ 
         \end{itemize}
+
     \end{alertblock}
 
-    \vspace{-0.24cm}
-    \begin{center}
-        \includegraphics[width = 6 cm,height = 2.8cm]{Pictures/ild_VXD.png}
+    %\vspace{-0.25cm}
+    %\begin{alertblock}{The ILC vertex detector requirements}
+    %    \begin{itemize}
+    %        %\item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
+    %        %\item Hit resolution: $a \simeq 5 \mu m \Rightarrow \ \sigma_{spatial} < 3 \mu m$
+    %        %\item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15 \% \ X_0 $ for an excellent flavour tagging performance. 
+    %        \item Spatial resolution: $< \ 3~\mu m$
+    %        \item Material budget per measurement point: $\simeq 0.15~\%~X_0 $
+    %    \end{itemize}
+    %\end{alertblock}
 
-        %\vspace{-0.2cm}
-        \scriptsize{Two geometry options for the ILD vertex detector: 5 layers of single-sided detector (left) or \\ \only<2>{\textbf{3 layers of double-sided detector}} \only<-1>{3 layers of double-sided detector} (right)}
+    %\vspace{-0.24cm}
+    %\begin{center}
+    %    \includegraphics[width = 6 cm,height = 2.8cm]{Pictures/ild_VXD.png}
 
-    \end{center}
+    %    %\vspace{-0.2cm}
+    %    \scriptsize{Two geometry options for the ILD vertex detector: 5 layers of single-sided detector (left) or \\ \only<2>{\textbf{3 layers of double-sided detector}} \only<-1>{3 layers of double-sided detector} (right)}
 
-\end{frame}
+    %\end{center}
 
-\begin{frame}
-    \frametitle{Outlines}
-    \tableofcontents[currentsection]
 \end{frame}
 
 %-------------------------------
 %                           PLUME Project
 %-------------------------------
 
-\subsection{PLUME project}
+  %\section{Vertex detector}
+  %  \subsection{CMOS sensors}
+  %  \subsection{PLUME project}
+  %  \subsection{Impact parameter}
+    
+\section{PLUME project}
+\begin{frame}
+    \frametitle{Outlines}
+    \tableofcontents[currentsection,hideothersubsections, 
+    sectionstyle=show/shaded,]
+\end{frame}
 
 %--------------------------------
 %       PART I: PLUME
@@ -542,20 +597,411 @@
   \end{itemize}
 \end{frame}
 
-
-  %\section{Vertex detector}
-  %  \subsection{CMOS sensors}
-  %  \subsection{PLUME project}
-  %  \subsection{Impact parameter}
-    
   \section{Mechanical deformation}
-    \subsection{TB-2011}
-    \subsection{Spatial resolution}
-    \subsection{Deformation}
   
+  \begin{frame}
+    \frametitle{Outlines}
+    \tableofcontents[currentsection]
+  \end{frame}
+
+%-------------------------------
+%   TB
+%-------------------------------
+
+  \subsection{Test Beam @ SPS}
+  \begin{frame}
+    \frametitle{Test beam @ SPS with 120 GeV $\pi^- $ in November 2011}
+
+    \begin{columns}[t]
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4 cm]{Pictures/plume_testBeam_nov2011.jpg}
+        \end{center}
+      \end{column}
+
+      \begin{column}{7cm}
+        \vspace{-0.8cm}
+        \begin{itemize}
+          \item Beam test on line H6a @ SPS
+          \item Reference plane: 4 Mimosa 26
+          \item Validation of the first PLUME double sided ladder equiped with 12 Mi26 sensors
+        \end{itemize}
+
+        \vspace{-0.3cm}
+        \begin{block}{Scan on the ladder:}
+          \begin{itemize}
+            \item In threshold (5 and 6 mV)
+            \item In position (sensor 1-2, 3-4 and 5-6)
+            \item Without and with angle (between 30 and 40 degres)
+            \item With two differents air flow speed ($\simeq$ 3 to 6 ms$^{-1}$)
+          \end{itemize}
+        \end{block}
+      \end{column}
+    \end{columns}
+
+    %\vspace{-0.1cm}
+    \footnotesize{
+    \centering{Jérôme Baudot, Gilles Claus, Loic Cousin, Mathieu Goffe, Rohrry Gold, Joel Goldstein, Ingrid Gregor, Robert Maria.}}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Test beam @ SPS with 120 GeV $\pi^- $ in October 2011}
+
+    %Beam of 120 GeV $\pi -$.
+
+    \vspace{-0.1cm}
+    Three configurations studied:
+
+    \vspace{-0.7cm}
+    \begin{columns}[t]
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4cm,height = 3.9cm]{Pictures/tb_cern_11_sketch_normal.pdf}
+
+          \footnotesize{\textbf{Module perpendicular to the beam.}}
+        \end{center}
+      \end{column}
+
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4cm,height = 4.1cm]{Pictures/tb_cern_11_sketch_tilted.pdf}
+
+          \vspace{-0.2cm}
+          \footnotesize{\textbf{Module tilted (between 28\degres and 40\degres).}}
+        \end{center}
+      \end{column}
+
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4cm,height = 4.0cm]{Pictures/tb_cern_11_sketch_tilted120mm.pdf}
+
+          \footnotesize{Module tilted ($\simeq$ 60\degres).}
+        \end{center}
+      \end{column}
+    \end{columns}
+
+    \footnotesize{$\Rightarrow$ Study track-hit residual and the distribution of this residual as a function of the relative position of the beam on the sensor.
+
+    \centering{\textbf{The analysis was performed with a software developed by IPHC-Picsel: TAF (TAPI Analysis Framework). }}}
+    %\grille
+\end{frame}
+
+\begin{frame}
+    \frametitle{Track-hit residual}
+
+    \begin{columns}[t]
+      \begin{column}{7cm}
+        \begin{center}
+          \includegraphics[width = 7cm]{Pictures/residual_explanation.png}
+        \end{center}
+      \end{column}
+      \begin{column}{4cm}
+        \scriptsize{
+        \begin{block}{Alignment of the device under test (DUT)}
+          \begin{itemize}
+            \item The track of a particle is defined by the telescope
+            \item To align the DUT in the reference coordinates system:
+              \begin{itemize}
+                \scriptsize{
+                \item Modify the coordinates of our DUT in the software (tilt and/or position)
+                \item Define a maximal range in which a hit can be associated to a track
+                }
+              \end{itemize}
+          \end{itemize}
+        \end{block}
+      }
+      \end{column}
+    \end{columns}
+\end{frame}
+
+%-------------------------------
+%                           RUN Normal incidence
+%-------------------------------
+\begin{frame}
+  \frametitle{Module perpendicular to the beam}
+
+  \vspace{-0.2cm}
+  \centering{Threshold of 6 $\sigma$, fan speed <  5m/s and 1.8M events.}
+
+  \vspace{-0.2cm}
+  \begin{center}
+      \includegraphics[width = 10cm]{Pictures/RsAlign_226056_pl6.png}
+  \end{center}
+
+  \vspace{-0.35cm}
+  \centering{Spatial residual obtained after alignment:}
+
+  \centering{$ \sigma_U \simeq 4.2 \ \mu m \ and \ \sigma_V \simeq 4 \ \mu m$}
+\end{frame}
+
+%-------------------------------
+%                           RUN Tilt of 36 degres
+%-------------------------------
+\begin{frame}
+  \frametitle{Module titled in one direction (w.r.t. to the beam axis)}
+
+  \vspace{-0.2cm}
+  \centering{Threshold of 6 $\sigma$, fan speed <  5m/s, 720k events and a tilt of 36 \degres.}
+
+  \vspace{-0.2cm}
+  \begin{center}
+      \includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6.png}
+  \end{center}
+
+  \vspace{-0.35cm}
+  \centering{Spatial residual obtained after alignment: }
+
+  \centering{$ \sigma_U \simeq 6.1 \ \mu m \ and \ \sigma_V \simeq 3.8 \ \mu m $}
+
+\end{frame}
+
+%-------------------------------
+%                           Origin of deviations
+%-------------------------------
+\subsection{Origin of deviations and how to take them into account}
+\begin{frame}
+  \frametitle{Origin of the deviations}
+
+  \vspace{-0.2cm}
+  \begin{block}{Consequence of the ladder's characteristics}
+    \begin{itemize}
+      \item Use of ultra-thin (50 \ $\mu m$) and precise sensors (spatial resolution less than $4 \ \mu m$)
+      \item Mechanical constraints induce permanent deformations ($\simeq 10 \ \mu m$) which can not be flattened during the ladder assembly
+    \end{itemize}
+  \end{block}
+
+  \vspace{-0.2cm}
+  \centering{Metrology of the module's surface (perfomed at Bristol)}
+
+  \vspace{-0.3cm}
+  \begin{columns}[c]
+    \begin{column}{6cm}
+      \begin{center}
+        \includegraphics[width = 5.7cm]{Pictures/SideAPlumeLadder2010_M20.png}
+      \end{center}
+    \end{column}
+
+    \begin{column}{6cm}
+      \begin{center}
+        \includegraphics[width = 6cm]{Pictures/SideBPlumeLadder2010_M20.png}
+      \end{center}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Origin of the devations}
+  
+  \begin{block}{Artefacts from the modelling of our sensors during the analysis}
+    \begin{itemize}
+      \item Modelling the sensors as completely flat planes
+      \item The track extrapolation is sensitive to the exact position of the hit on the plane and the angle of incidence
+    \end{itemize}
+  \end{block}
+
+  \begin{columns}[c]
+    \begin{column}{5cm}
+      \vspace{-0.2cm}
+      \begin{center}
+        \includegraphics[width = 4.8cm]{Pictures/origin_deformation.png}
+      \end{center}
+    \end{column}
+
+    \begin{column}{5cm}
+      \begin{alertblock}{Deviations of the residual}
+        \[ \delta W \ = \ \frac{\delta U}{\tan \theta}\]
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+%-------------------------------
+%                           How to take into account shape
+%-------------------------------
+\begin{frame}
+  \frametitle{How to describe deviations from the flat plane?}
+
+  \vspace{-0.3cm}
+  \begin{block}{arXiv:1403.2286 [physics.ins-det] CMS paper}
+    \begin{itemize}
+      \item Sensor shape parametrised as a sum of products of modified Legendre polynomials:
+    \end{itemize}
+    \vspace{-0.2cm}
+    \[
+      \begin{array}{rl}
+          w(u_r,v_r) &= w \\ 
+                     &+ w_{10} \cdot u_r + w_{01} \cdot v_r \\ 
+                     &+ w_{20} \cdot (u_r^2-1/3) + w_{11} \cdot (u_r \cdot v_r) + w_{02} \cdot (v_r^2 - 1/3) \\
+      \end{array}
+    \]
+    \vspace{-0.5cm}
+    \begin{itemize}
+      \item In our case, we used Legendre polynomials of the $7^{th}$ order only in the direction of the deformation. 
+    \end{itemize}
+  \end{block}
+
+  \vspace{-0.3cm}
+  \begin{center}
+    \includegraphics[width = 10.5cm]{Pictures/lagrangianPlynomials.png}
+  \end{center} 
+
+\end{frame}
+
+%-------------------------------
+%                           Parametrization of the deformation
+%-------------------------------
+\begin{frame}
+  \frametitle{Parametrization of the deformation}
+
+  \centering{Possibility to parametrise the deformation with Legendre polynomials of the $7^{th}$ order .} 
+
+  \vspace{-0.2cm}
+  \begin{center}
+    \includegraphics[width = 10 cm]{Pictures/RsAlign_226057_pl6_fitted.png}
+  \end{center}
+
+  %\grille
+
+  \begin{tikzpicture}[overlay,remember picture, red, shift={(current page.south west)}]
+    \begin{scope}
+      \draw[line width = 2pt,-latex] (5.5,1.75) ellipse (1.2cm and 0.6cm);
+    \end{scope}
+  \end{tikzpicture}
+
+\end{frame}
+
+\subsection{Results on the correction of deviations}
+\begin{frame}
+  \frametitle{Correction of the deviations between real hits and extrapolated ones}
+
+  \vspace{-0.35cm}
+  \begin{center}
+    \includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6_corrected.png}
+  \end{center}
+
+  \vspace{-0.35cm}
+  \centering{Spatial residual obtained after correction: }
+
+  \vspace{-0.15cm}
+  \centering{$\sigma_U \simeq 5.8 \ \mu m $ instead of $ \sigma_U \simeq 6.1 \ \mu m$}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Module tilted with an angle of 28\degres}
+
+  \vspace{-0.35cm}
+  Threshold of 5 $\sigma$, fan speed of 6 m/s, 720k events.
+
+  \vspace{-0.35cm}
+  \begin{columns}[c]
+    \begin{column}{5cm}
+      \begin{block}{Before correction}
+        \begin{center}
+          \includegraphics[width = 4.8cm]{Pictures/RsAlign_226021_pl6_deformed2.png}
+        \end{center}
+
+        \vspace{-0.54cm}
+        \centering{\footnotesize{$ \sigma = 9.855 \mu m$}}
+      \end{block}
+    \end{column}
+
+    \begin{column}{5cm}
+      \begin{block}{After correction}
+        \begin{center}
+          \includegraphics[width = 4.8cm]{Pictures/RsAlign_226021_pl6_corrected2.png}
+        \end{center}
+
+        \vspace{-0.52cm}
+        \centering{\footnotesize{$ \sigma = 5.346 \mu m $}}
+      \end{block}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Summary of correction for different angles and same planes}
+
+  \vspace{-0.28cm}
+  \begin{block}{Spatial residuals}
+    \begin{center}
+      \begin{tabular}{c K{1cm} c c K{2cm}}
+        \hline %----------------------------------------------------------------------------------------------------------------
+        Side &  Tilted angle ($^{\circ}$)  &   $\sigma_{U}^{Def}~(\mu m$) &   $\sigma_{U}^{Cor}~(\mu m$) & Improvement \\
+        \hline %----------------------------------------------------------------------------------------------------------------
+        \hline %----------------------------------------------------------------------------------------------------------------
+        Front &      28       & $ 9.0 \ \pm \ 0.1 $ & $ 4.9 \ \pm \ 0.1 $ &    $46.6 \ \%$  \tabularnewline
+        Back  &      28       & $ 5.7 \ \pm \ 0.1 $ & $ 4.7 \ \pm \ 0.1 $ &    $17.5 \ \%$  \tabularnewline
+        \hline %----------------------------------------------------------------------------------------------------------------
+        Front &      36       & $ 14.1 \ \pm \ 0.1 $ & $ 6.1 \ \pm \ 0.1 $ &    $56.0 \ \%$ \tabularnewline
+        Back  &      36       & $ 6.8 \ \pm \ 0.1 $ & $ 5.9 \ \pm \ 0.1 $ &    $13.2 \ \%$  \tabularnewline
+        \hline %----------------------------------------------------------------------------------------------------------------
+        Front &      60       & $ 41.2 \ \pm \ 0.15$ & $25.8 \ \pm \ 0.2$  &    $37.4 \ \%$ \tabularnewline
+        Back  &      60       & $ 23.3 \ \pm \ 0.13$ & $21.7 \ \pm \ 0.1$  &    $6.8 \ \%$  \tabularnewline
+        \hline %----------------------------------------------------------------------------------------------------------------
+      \end{tabular}
+    \end{center}
+    \vspace{-0.35cm}
+    \centering{$\sigma_{tel} = 2.2 \mu m$ for 36\degres and $\sigma_{tel} = 18.8 \mu m$ for 60\degres.}
+  \end{block}
+
+\end{frame}
+
   \section{Radiation length measurement}
-    \subsection{TB-2016}
+    \subsection{Test beam @ DESY}
+
+    \begin{frame}
+      \frametitle{Test beam @ DESY with 5 GeV $e^-$ (April 2016)}
+      
+      \begin{columns}[t]
+        \begin{column}{5cm}
+          \begin{center}
+            \includegraphics[width = \textwidth]{Pictures/testBeam.png}
+          \end{center}
+        \end{column}
+        \begin{column}{5cm}
+          \begin{itemize}
+            \item Test Beam 21
+            \item Reference plane: 4 EUDET telescope planes
+            \item Goal: radiation length measureemnt
+          \end{itemize}
+        \end{column}
+      \end{columns}
+    \end{frame}
+
+    \begin{frame}
+
+      \begin{center}
+        \includegraphics[width = \textwidth]{Pictures/testBeamAcquisition.png}
+      \end{center}
+    \end{frame}
+
     \subsection{Theoretical estimation}
+
+    \begin{frame}
+      \frametitle{Estimation of the radiation length}
+
+      \begin{columns}[t]
+        \begin{column}{5cm}
+        \end{column}
+        \begin{column}{5cm}
+          \begin{block}{Beam passes through}
+            \begin{itemize}
+              \item $2 \times$ Mi-26 (thinned down to $\sim 50~\mu$m): $0.053~\%$ X$_0$
+              \item $4 \times$ glue layers: $\sim 0.01~\%$ X$_0$
+              \item $1 \times$ SiC foam: $\sim 0.184~\%$ X$_0$
+              \item $2 \times$ flex-cable: $\sim 0.084 - 0.092~\%$ X$_0$
+              %\item $2 \times$ flex cable: $\sim 0.084~-~0.092~\%$ X$_0$
+            \end{itemize}
+            $\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
+          \end{block}
+        \end{column}
+      \end{columns}
+    \end{frame}
+
     \subsection{Results}
     
   \section{Conclusion and outlook} 
@@ -741,6 +1187,9 @@
     \end{itemize}
   \end{frame}
 
+%-------------------------------
+%   BACK-UP: WHY LINEAR COLLIDER
+%-------------------------------
   \begin{frame}[plain]
     \frametitle{Why a linear collider?}
 
@@ -760,6 +1209,40 @@
         \item Detectors close to the IP $\Rightarrow$ optimum for $c$-tagging
       \end{itemize}
     \end{block}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: ILC INTERACTION REGION
+%-------------------------------
+  \begin{frame}
+    \frametitle{ILC interaction region}
+
+    \begin{itemize}
+      \item 1 interaction region for 2 detectors
+      \item Push-pull:
+      \begin{itemize}
+        \item Detectors mounted on movable platforms
+        \item Sharing of beam time
+        \item Switching time: 24h to 48h
+        \item Allow cross-checking
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: ILC ENVIRONMENT
+%-------------------------------
+  \begin{frame}
+    \frametitle{ILC environment}
+
+    \begin{itemize}
+      \item Bunch spacing of $\sim 554$ ns
+      \item 1312 bunches in a 1 ms long pulse (train)
+      \item Quiet time: 199 ms
+      \item Occupancy dominated by beam background and noise
+      \item Reading during quiet time possible
+    \end{itemize}
+
   \end{frame}
 \end{document}
 
