@@ -252,32 +252,35 @@
         \end{itemize}
       \end{block}
     \end{frame}
-
-    \subsection{Higgs Boson}
-
-    \begin{frame}
-      \frametitle{The Higgs boson discovery}
-
-      \begin{columns}[t]
-        \begin{column}{5cm}
-          \begin{itemize}
-            \item Discovery at the LHC (ATLAS and CMS)
-          \end{itemize}
-        \end{column}
-        \begin{column}{5cm}
-        elele
-        \end{column}
-      \end{columns}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Higgs Boson}
-
-      \begin{center}
-        \includegraphics[width = 0.6\textwidth]{Pictures/Chapter_Theory_figs_mass-coupling1TeV.png}
-      \end{center}
      
-    \end{frame}
+
+
+
+%    \subsection{Higgs Boson}
+%
+%    \begin{frame}
+%      \frametitle{The Higgs boson discovery}
+%
+%      \begin{columns}[t]
+%        \begin{column}{5cm}
+%          \begin{itemize}
+%            \item Discovery at the LHC (ATLAS and CMS)
+%          \end{itemize}
+%        \end{column}
+%        \begin{column}{5cm}
+%        elele
+%        \end{column}
+%      \end{columns}
+%    \end{frame}
+%
+%    \begin{frame}
+%      \frametitle{Higgs Boson}
+%
+%      \begin{center}
+%        \includegraphics[width = 0.6\textwidth]{Pictures/Chapter_Theory_figs_mass-coupling1TeV.png}
+%      \end{center}
+%     
+%    \end{frame}
     \subsection{ILC and ILD}
 %-------------------------------
 %   Intro: ILC 
@@ -358,6 +361,320 @@
     \end{center}
 \end{frame}
 
+
+    \begin{frame}
+      \frametitle{The Higgs boson}
+      \begin{itemize}
+        \item Higgs-Brout-Englert mechanism use to describe the electroweak symmetry breaking
+        \item 2012: discovery of the Higgs boson by CMS and ATLAS
+      \end{itemize}
+      \begin{block}{Measurements @ LHC:}
+        \begin{itemize}
+          \item Mass: $125.7 \pm 0.4$ GeV
+          \item Spin: 0
+          \item Couplings
+        \end{itemize}
+      \end{block}
+    \end{frame}
+
+
+    \begin{frame}
+    \frametitle{Higgs boson study in a linear collider}
+
+    \vspace{-0.3cm}
+    \begin{columns}[c]
+        \begin{column}{5cm}
+            \begin{center}
+                %\includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
+            \end{center}
+        \end{column}
+        \begin{column}{5cm}
+            \begin{itemize}
+                \item Analysis of the data simulation of ILC @ \hyperlink{Xsec}{350 GeV} with different polarisations:
+                    \begin{itemize}
+                        \item $e^+_L e^-_R$
+                        \item $e^+_R e^-_L$
+                    \end{itemize}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{How to perform the analysis?}
+
+    \tikzset{
+        particle/.style={thick,draw=black, postaction={decorate},
+        decoration={markings,mark=at position .5 with {\arrow[black]{triangle 45}}}},
+        aparticle/.style={thick,draw=black, postaction={decorate},
+        decoration={markings,mark=at position .5 with {\arrow[black]{triangle 45 reversed}}}},
+        gluon/.style={decorate, draw=black,
+        decoration={coil,aspect=0}}
+    }
+
+
+    \vspace{-0.3cm}
+    \begin{itemize}
+        \item Study the H$\nu\nu$ channel where the Higgs decays into a pair of charm/anti-charm
+        \item Focus on Higgs Strahlung and WW fusion:
+    \end{itemize}
+    \vspace{-0.3cm}
+    \begin{center}
+        $m_H \ \simeq \ 125 \ GeV \Rightarrow$ Higgs Strahlung and WW-fusion have comparable cross sections.  
+    \end{center}
+    \vspace{-0.1cm}
+    \begin{columns}[c]
+        \begin{column}{5cm}
+            %\includegraphics[width = 6cm]{../../Crap/Pictures/higgsstrahlung.jpg}
+            \begin{tikzpicture}[node distance=1cm and 1.5cm]
+                \coordinate[label=left:$e^{+}$] (p1);
+                \coordinate[below right=of p1] (aux1);
+                \coordinate[below left=of aux1, label=left:$e^{-}$] (e1);
+                \coordinate[right=1.25cm of aux1] (aux2);
+                \coordinate[above right=of aux2,label=right:$H$] (higgs);
+                \coordinate[below right=1cm of aux2, label=left:$Z$] (Z);
+                \coordinate[above right=1cm of Z, label=right:$\nu$] (nu);
+                \coordinate[below right=1cm of Z, label=right:$\overline{\nu}$] (nuB);
+
+                \draw[aparticle] (p1) -- (aux1);
+                \draw[aparticle] (aux1) -- (e1);
+                \draw[dashed,red] (higgs) -- (aux2);
+                \draw[gluon] (aux2) -- (Z);
+                \draw[gluon] (aux1) -- node[label=above:$Z^*$] {} (aux2);
+                \draw[particle] (Z) -- (nu);
+                \draw[aparticle] (Z) -- (nuB);
+
+            \end{tikzpicture}
+        \end{column}
+
+        \begin{column}{5cm}
+            \begin{tikzpicture}[node distance = 1cm and 1.2cm]
+                \coordinate[label=left:$e^{+}$] (p1);
+                \coordinate[below right=of p1] (aux1);
+                \coordinate[above right=of aux1,label=right:$\overline{\nu}$] (nuB);
+                \coordinate[below=0.85cm of aux1,xshift=0.5cm] (aux2);
+                \coordinate[right=of aux2, label=right:$H$] (higgs);
+                \coordinate[below=0.85cm of aux2,xshift=-0.5cm] (aux3);
+                \coordinate[below left=of aux3,label=left:$e^{-}$] (e1);
+                \coordinate[below right=of aux3,label=right:$\nu$] (nu);
+
+                \draw[aparticle] (p1) -- (aux1);
+                \draw[aparticle] (aux1) -- (nuB);
+                \draw[dashed,red] (aux2) -- (higgs);
+                \draw[gluon] (aux1) -- node[label=left:$W$] {} (aux2);
+                \draw[gluon] (aux2) -- node[label=left:$W$] {} (aux3);
+                \draw[particle] (e1) -- (aux3);
+                \draw[particle] (aux3) -- (nu);
+            \end{tikzpicture}
+            %\includegraphics[width = 6cm]{../../Crap/Pictures/HiggsProd_vvH.png}
+        \end{column}
+    \end{columns}
+
+    \vspace{-0.3cm}
+    \begin{center}
+        Using polarized beam to separate the processes.
+    \end{center}
+\end{frame}
+
+%-------------------------------
+%                           How to
+%-------------------------------
+
+\subsection{Performing the analysis}
+\begin{frame}
+    \frametitle{How to get the signal from the H$\nu\nu$ channel}
+
+    \begin{enumerate}
+        \item Cuts on the number of isolated leptons
+        \item Consider up to 4 jets
+        \item Look at the jets information
+        \item Find the displaced vertices of the jets
+        \item Find and tag the 2 jets coming from the Higgs decay
+    \end{enumerate}
+
+    \begin{block}{Why aren't we looking first for 2 jets?}
+        The analysis software gives a better reconstruction when looking first at events which have up to 4 jets
+    \end{block}
+
+    \begin{center}
+        So far, I haven't done the last step to reconstruct the charm coming from the Higgs.
+    \end{center}
+\end{frame}
+
+%-------------------------------
+%                           How to
+%-------------------------------
+\begin{frame}[label=signalReconstruction]
+    \frametitle{Reconstruction of signal coming from H$\nu\nu$}
+    \begin{columns}[c]
+        \begin{column}{4cm}
+             %\framezoom<1><2>[border](-1cm, 0cm)(4cm, 4cm)
+            %\includegraphics[width = 4cm]{../../Crap/Pictures/Emiss.png}
+            %\pgfimage[width = 4cm,height=4cm]{Pictures/eMiss.png}
+        \end{column}
+        \begin{column}{4cm}
+            %\framezoom<1><3>[border](0cm, 0cm)(4cm, 4.2cm)
+            %\includegraphics[width = 4cm]{../../Crap/Pictures/Mmiss.png}
+            %\pgfimage[width = 4cm,height=4cm]{Pictures/mMiss.png}
+        \end{column}
+        \begin{column}{4cm}
+            %\framezoom<1><4>[border](0cm, 0cm)(4cm, 4.2cm)
+            %\includegraphics[width = 4cm]{../../Crap/Pictures/mvis.png}
+            %\pgfimage[width = 4cm,height=4cm]{Pictures/mVis.png}
+        \end{column}
+    \end{columns}
+
+    \begin{center}
+        \textcolor{red}{e$^-_R$, e$^+_L$}
+
+        \textcolor{blue}{e$^-_L$, e$^+_R$}
+    \end{center}
+
+    %\grille
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{A more realistic analysis}
+
+    %\begin{itemize}
+    %\item
+    {\footnotesize{
+            \vspace{-0.3cm}
+            \begin{block}{Need to take into account the background processes:}
+                \begin{itemize}
+                    \item W-boson pair production
+                        \vspace{-0.1cm}
+                        \begin{itemize}
+                            \item Semi-leptonic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  \nu_l l^{\pm}q\overline{q}$
+                            \item Hadronic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  q\overline{q}q\overline{q}$
+                        \end{itemize}
+                        \vspace{-0.2cm}
+                    \item Z-boson pair production
+                        \vspace{-0.1cm}
+                        \begin{itemize}
+                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ \nu_l \overline{\nu_l }q \overline{q}$ 
+                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ l^+ l^- q \overline{q}$ 
+                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ q \overline{q} q\overline{q}$ 
+                        \end{itemize}
+                        \vspace{-0.2cm}
+                    \item Single W-boson production
+                        \vspace{-0.1cm}
+                        \begin{itemize}
+                            \item $e^+e^- \ \rightarrow \ W^{\pm} e^{\pm} \nu_e \ \rightarrow \nu_ee^{\pm}q\overline{q}$
+                        \end{itemize}
+                        \vspace{-0.2cm}
+                    \item Single Z-boson production
+                        \vspace{-0.1cm}
+                        \begin{itemize}
+                            \item $e^+e^- \ \rightarrow \ Z e^-e^+ \ \rightarrow q\overline{q}e^-e^+$
+                                %\item $e^+e^- \ \rightarrow \ Z \nu\overline{\nu} \ \rightarrow q\overline{q}\nu\overline{\nu} $
+                            \item $e^+e^- \ \rightarrow \ Z \ q\overline{q} \ \rightarrow q\overline{q}q\overline{q}$
+                        \end{itemize}
+                        \vspace{-0.2cm}
+                    \item Higgsstrahlung:
+                        \vspace{-0.1cm}
+                        \begin{itemize}
+                            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ q\overline{q}q\overline{q}$ 
+                            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ l^+ l^- q \overline{q}$
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+    }}
+    %\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle<1>{Distribution of the visible invariant mass without background}
+    \frametitle<2>{Distribution of the visible invariant mass with background}
+    \begin{center}
+        \centering
+        Polarisation: e$^-_L$, e$^+_R$%} %, luminosity = 250 fb$^-1$}
+        %\only<1>{\includegraphics[width = 8cm]{Pictures/mVis.png}}
+        %\only<2>{
+        %\includegraphics[width = 8cm]{Pictures/mVis_all.png}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Distribution of each process}
+
+    \begin{center}
+        \footnotesize{
+            \begin{tabular}{|c|c|c|}
+                \hline
+                {Process}&{Cross Section (fb) }&{Expected events}\\\hline
+                Zhad&38610.67&12741520.2\\\hline
+                WW had&6532.83&2155835.19\\\hline
+                WW semilep&8155.94&2691461.62\\\hline
+                ZZ had&600.84&198277.47\\\hline
+                ZZ semilep&564.82&186392.28\\\hline
+                singleW semilep&1625.68&536474.52\\\hline
+                singleZee semi&310.00&102299.31\\\hline
+                singleZnn semi&355.32&117256.43\\\hline
+                Higgs BG&161.96&53447.96\\\hline
+                HiggsToOther&30.48&10059.59\\\hline
+                \hline
+                BG&56948.56&18793024.59\\\hline
+                Signal&68.17&22495.72\\\hline
+                Signf&&5.19\\\hline
+            \end{tabular}
+        }   
+        \[significance = \frac{signal}{\sqrt{signal + background}}\]
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Reducing the background}
+
+    \begin{block}{Find optimized cuts}
+        \begin{itemize}
+            \item For each cut, try to find the one which reduces the signal the least
+                \[significance = \frac{signal}{\sqrt{signal + background}}\]
+            \item Apply the cuts from the one which gives best significance to the one gives the worst
+        \end{itemize}
+    \end{block}
+
+    \begin{exampleblock}{Cuts to reduce the background}
+        \begin{enumerate}
+            \item [cut0] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
+            \item [cut1] Transverse Momentum visible (Ptvis): 35 < Ptvis < 155 GeV
+            \item [cut2] Visible mass (mvis): 95 < mvis < 140 GeV
+            \item [cut3] Angle between the two jets (cosa): -1 < cosa < 0.22
+        \end{enumerate}
+    \end{exampleblock}
+
+\end{frame}
+
+\subsection{Preliminary results}
+\begin{frame}
+    \frametitle{Reduction table after applying cuts}
+
+    \hspace{-0.7cm}
+    \centering 
+    \footnotesize{ 
+                \begin{tabular}{c c c c}
+      \hline
+      Process                                     & Background          & Signal              & Significance  \tabularnewline
+      \hline
+      \hline
+      Cross-section (fb)                          & $5.69 \cdot 10^{4}$ & $6.82 \cdot 10^{2}$ &               \tabularnewline
+      \hline
+      Expected event number                       & $1.88 \cdot 10^{7}$ & $2.25 \cdot 10^{4}$ & $5.2$         \tabularnewline
+      No isolated leptons                         & $1.65 \cdot 10^{7}$ & $2.23 \cdot 10^{4}$ & $5.5$         \tabularnewline
+      {$35 <~\rm{{P}_{t}^{vis}} < 155~\rm{GeV} $} & $9.31 \cdot 10^{5}$ & $1.82 \cdot 10^{4}$ & $18.7$        \tabularnewline
+      {$95 <~\rm{m_{vis}}< 140~\rm{GeV}$}         & $1.50 \cdot 10^{5}$ & $1.66 \cdot 10^{4}$ & $40.6$        \tabularnewline
+      {$-1 <~\rm{\cos{\alpha}}< 0.22$}            & $8.76 \cdot 10^{4}$ & $1.57 \cdot 10^{4}$ & $48.8$        \tabularnewline
+      $26 < (\rm{N.R.C > 1GeV}) < 99$             & $2.25 \cdot 10^{4}$ & $1.19 \cdot 10^{4}$ & $56.3$        \tabularnewline
+      $0.11 < \rm{DurhamjD2ym} < 1$               & $1.78 \cdot 10^{4}$ & $1.05 \cdot 10^{4}$ & $62.3$        \tabularnewline
+      $0 < \rm{abs(RefinedjPzvis)} < 113~\rm{GeV}$& $1.51 \cdot 10^{4}$ & $1.01 \cdot 10^{4}$ & $63.5$        \tabularnewline
+      $156 < \rm{RefinedjEmiss} < 230~\rm{GeV}$   & $1.37 \cdot 10^{4}$ & $9.85 \cdot 10^{3}$ & $64.1$        \tabularnewline      
+      \hline %----------------------------
+    \end{tabular}
+   }
+\end{frame}
+
   
   \begin{frame}[label=vxd]
     \frametitle{The ILD Vertex Detector}
@@ -409,6 +726,8 @@
     %\end{center}
 
 \end{frame}
+
+
 
 %-------------------------------
 %                           PLUME Project
@@ -1039,10 +1358,21 @@
 
     \begin{frame}
       \frametitle{Multiple scattering}
-
-      \begin{center}
-        \includegraphics[width = 0.5\textwidth]{Pictures/multiple_scattering.jpg}
-      \end{center}
+      
+      \begin{columns}[c]
+        \begin{column}{6cm}
+          \centering
+          \includegraphics[width = 5cm]{Pictures/multiple_scattering.jpg}
+        \end{column}
+        \begin{column}{6cm}
+          \begin{block}{Charged particles traveling through matter}
+            \begin{itemize}
+              \item Lose energy via inelastic collisions with atomic electrons
+              \item Deflection by many small angles (Coulomb scattering from nuclei)
+            \end{itemize}
+          \end{block}
+        \end{column}
+      \end{columns}
 
       \begin{block}{Multiple scattering and radiation length}
         \begin{center}
@@ -1056,7 +1386,7 @@
     \begin{frame}
       \frametitle{Test beam @ DESY with 5 GeV $e^-$ (April 2016)}
       
-      \begin{columns}[t]
+      \begin{columns}[c]
         \begin{column}{5cm}
           \begin{center}
             \includegraphics[width = \textwidth]{Pictures/testBeam.png}
@@ -1108,13 +1438,15 @@
       \frametitle{Kink angle measurement between 1 and 4 GeV}
 
       \begin{block}{Fitted kink angle distributions}
-        \begin{columns}[t]
+        \begin{columns}[c]
           \begin{column}{5cm}
+            \centering
             \includegraphics[width = \textwidth]{Pictures/kinkAngle1GeV.png}
             \
             \includegraphics[width = \textwidth]{Pictures/kinkAngle2GeV.png} 
           \end{column} 
           \begin{column}{5cm}
+            \centering
             \includegraphics[width = \textwidth]{Pictures/kinkAngle3GeV.png}
             \ 
             \includegraphics[width = \textwidth]{Pictures/kinkAngle4GeV.png}
@@ -1141,16 +1473,26 @@
   \section{Conclusion and outlook} 
 
   \begin{frame}
-    \frametitle{Conclusion}
+    \frametitle{Summary}
 
     \begin{itemize}
-      \item rgmgr
+      \item Mechanical deformations are impacting the spatial resolution
+      \item An offline algorithm reduces this impact
+      \item 
     \end{itemize}
 
   \end{frame}
 
   \begin{frame}
     \frametitle{Outlook}
+
+    \begin{itemize}
+      \item Study ladder performance for low energy (test beam April 2016)
+      \item New prototype with a material budget of $0.35~\%$ X$_0$ has been built, tested in laboratory but not yet in real conditions
+      \item Double-sided ladders could be enriched with sensors having different characteristics (fast integration time VS good spatial resolution)
+      \item Using the beam structure to apply a power-pulsing method
+    \end{itemize}
+
   \end{frame}
 
   \begin{frame}
