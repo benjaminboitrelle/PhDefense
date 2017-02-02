@@ -205,6 +205,7 @@
       %\frametitle{Standard Model}
       \frametitle{What is the Universe made of?}
 
+      \vspace{-0.3cm}
       \begin{block}{Matter:}
       \begin{center}
         \begin{tabular}{c c c c c c c}
@@ -216,15 +217,27 @@
         %\includegraphics[width = 0.6\textwidth]{Pictures/elementaryParticles.jpg}
       \end{center}
       \end{block}
-      \uncover<5->{\begin{block}{Forces:}
+      
+      \vspace{-0.25cm}
+      \uncover<5->{
+        \begin{block}{Antimatter:}
+          \begin{itemize}
+            \item To each fermion is associated an anti-fermion
+            \item Same quantum numbers as fermions BUT opposite electric charge
+          \end{itemize}
+        \end{block}
+      }
+
+      \vspace{-0.25cm}
+      \uncover<6->{\begin{block}{Forces:}
       \begin{center}
         \begin{tabular}{c c c c}
-        \multirow{5}*{\uncover<5->{Bosons}} & \uncover<6->{$\gamma$} & \uncover<6->{$\rightarrow$} & \uncover<6->{E.M. interaction} \tabularnewline
-        & \uncover<7->{$Z^{0}/W^{\pm}$} & \uncover<7->{$\rightarrow$} & \uncover<7->{Weak interaction} \tabularnewline
-        & \uncover<8->{$g$ & $\rightarrow$} & \uncover<8->{Strong interaction} \tabularnewline
-        & \uncover<9->{\textcolor{gray}{graviton} & \textcolor{gray}{$\rightarrow$}} & \uncover<9->{\textcolor{gray}{Gravitation}} \tabularnewline
+        \multirow{5}*{\uncover<6->{Bosons}} & \uncover<6->{$\gamma$} & \uncover<7->{$\rightarrow$} & \uncover<7->{E.M. interaction} \tabularnewline
+        & \uncover<8->{$Z^{0}/W^{\pm}$} & \uncover<8->{$\rightarrow$} & \uncover<8->{Weak interaction} \tabularnewline
+        & \uncover<9->{$g$ & $\rightarrow$} & \uncover<9->{Strong interaction} \tabularnewline
+        & \uncover<10->{\textcolor{gray}{graviton} & \textcolor{gray}{$\rightarrow$}} & \uncover<10->{\textcolor{gray}{Gravitation}} \tabularnewline
         %\only<11->{\hline}
-        & \uncover<10->{$H$ & $\rightarrow$} & \uncover<10->{Higgs field} \tabularnewline
+        & \uncover<11->{$H$ & $\rightarrow$} & \uncover<11->{Higgs field} \tabularnewline
         \end{tabular}
       \end{center}
       \end{block}}
@@ -232,12 +245,33 @@
     \end{frame}
 
     \begin{frame}
+      \frametitle{Standard Model}
+
+      \begin{block}{Quantum field theory}
+        \begin{itemize}
+          \item Lagrangian field theory
+          \item Particles $\Rightarrow$ matter field
+          \item Bosons $\Rightarrow$ gauge field
+          \item Symmetries
+        \end{itemize}
+      \end{block}
+
+      \begin{block}{Standard Model}
+        \begin{itemize}
+          \item Interactions: QED + EW + QCD
+          \item Symmetry group: $U(1) \times SU(2) \times SU(3)$
+          \item Spontaneous electroweak symmetry via Higgs mechanism \\ $\Rightarrow$ particles' mass
+        \end{itemize}
+      \end{block}
+    \end{frame}
+
+    \begin{frame}
       \frametitle{Open questions}
 
       \begin{alertblock}{Limitations}
         \begin{itemize}
-          \item Free parameters
-          \item Neutrino mass
+          \item Why are they 3 families of particles?
+          \item Neutrino oscillation (theory does not predict mass of neutrino)
           \item Dark matter and dark energy
           \item ...
         \end{itemize}
@@ -253,34 +287,32 @@
       \end{block}
     \end{frame}
      
+  \begin{frame}
+    \frametitle{How to study matter?}
 
-
-
-%    \subsection{Higgs Boson}
-%
-%    \begin{frame}
-%      \frametitle{The Higgs boson discovery}
-%
-%      \begin{columns}[t]
-%        \begin{column}{5cm}
-%          \begin{itemize}
-%            \item Discovery at the LHC (ATLAS and CMS)
-%          \end{itemize}
-%        \end{column}
-%        \begin{column}{5cm}
-%        elele
-%        \end{column}
-%      \end{columns}
-%    \end{frame}
-%
-%    \begin{frame}
-%      \frametitle{Higgs Boson}
-%
-%      \begin{center}
-%        \includegraphics[width = 0.6\textwidth]{Pictures/Chapter_Theory_figs_mass-coupling1TeV.png}
-%      \end{center}
-%     
-%    \end{frame}
+    \begin{columns}[c]
+      \begin{column}{5cm}
+        \centering
+        \includegraphics[width = 5cm]{Pictures/instrument.png}
+      \end{column}
+      \begin{column}{5cm}
+        \begin{block}{LHC}
+          \begin{itemize}
+            \item Centre-of-mass energy $sqrt{s} = 14~\text{TeV}$
+            \item Collision with composites particles (protons or Pb)
+                \begin{itemize}
+                    \item Unknown momentum distribution of partons
+                    \item Unknown polarisation of colliding partons
+                    \item Trigger needed
+                \end{itemize}
+            \item Discovery machine
+            \item Need a complementary machine to perform more precise
+          \end{itemize}
+        \end{block}
+      \end{column}
+    \end{columns}
+  \end{frame}
+    
     \subsection{ILC and ILD}
 %-------------------------------
 %   Intro: ILC 
@@ -361,42 +393,42 @@
     \end{center}
 \end{frame}
 
+  \subsection{Example of study}
 
     \begin{frame}
-      \frametitle{The Higgs boson}
+      \frametitle{Higgs boson study}
       \begin{itemize}
-        \item Higgs-Brout-Englert mechanism use to describe the electroweak symmetry breaking
-        \item 2012: discovery of the Higgs boson by CMS and ATLAS
+        \item Particle's mass: electroweak symmetry breaking via Higgs-Brout-Englert mechanism
+        \item Discovery of the Higgs boson in 2012 by CMS and ATLAS (LHC)
       \end{itemize}
       \begin{block}{Measurements @ LHC:}
         \begin{itemize}
           \item Mass: $125.7 \pm 0.4$ GeV
           \item Spin: 0
-          \item Couplings
+          \item Couplings of Higgs boson to fermions and bosons, except $c$-quarks, gluons and Higgs self-coupling
         \end{itemize}
       \end{block}
     \end{frame}
 
-
     \begin{frame}
-    \frametitle{Higgs boson study in a linear collider}
+    \frametitle{Higgs boson study at the ILC}
 
     \vspace{-0.3cm}
     \begin{columns}[c]
-        \begin{column}{5cm}
-            \begin{center}
-                %\includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
-            \end{center}
-        \end{column}
-        \begin{column}{5cm}
+      \begin{column}{5cm}
+        \begin{center}
+          \includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
+        \end{center}
+      \end{column}
+      \begin{column}{5cm}
+        \begin{itemize}
+          \item Analysis of simulated data at the ILC @ \hyperlink{Xsec}{350 GeV} with different polarisations:
             \begin{itemize}
-                \item Analysis of the data simulation of ILC @ \hyperlink{Xsec}{350 GeV} with different polarisations:
-                    \begin{itemize}
-                        \item $e^+_L e^-_R$
-                        \item $e^+_R e^-_L$
-                    \end{itemize}
+              \item $e^+_L e^-_R$
+              \item $e^+_R e^-_L$
             \end{itemize}
-        \end{column}
+        \end{itemize}
+      \end{column}
     \end{columns}
 
 \end{frame}
@@ -416,12 +448,12 @@
 
     \vspace{-0.3cm}
     \begin{itemize}
-        \item Study the H$\nu\nu$ channel where the Higgs decays into a pair of charm/anti-charm
+        \item Study final state leading to H$\nu\nu$ channel where the Higgs boson decays into a pair of quarks or gluons
         \item Focus on Higgs Strahlung and WW fusion:
     \end{itemize}
     \vspace{-0.3cm}
     \begin{center}
-        $m_H \ \simeq \ 125 \ GeV \Rightarrow$ Higgs Strahlung and WW-fusion have comparable cross sections.  
+        $m_H~\simeq~125~\text{GeV and }\sqrt{s} = 350~\text{GeV} \Rightarrow$ Higgs Strahlung and WW-fusion have comparable cross sections.  
     \end{center}
     \vspace{-0.1cm}
     \begin{columns}[c]
@@ -481,148 +513,110 @@
 %                           How to
 %-------------------------------
 
-\subsection{Performing the analysis}
 \begin{frame}
-    \frametitle{How to get the signal from the H$\nu\nu$ channel}
+  \frametitle{Reconstruction of the H$\nu\nu$ channel}
 
+  \begin{block}{Final state signature:}
+    \begin{itemize}
+      \item 2 jets coming from the Higgs boson decay
+      \item Missing energy
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Events selection:}
     \begin{enumerate}
-        \item Cuts on the number of isolated leptons
-        \item Consider up to 4 jets
-        \item Look at the jets information
-        \item Find the displaced vertices of the jets
-        \item Find and tag the 2 jets coming from the Higgs decay
+      \item Reject events with isolated leptons
+      \item Remove $\gamma\gamma$ overlay interactions 
+      \item Look for jets
+      \item Find displaced vertices of the jets
+      \item Tag 2 jets coming from Higgs boson decay
     \end{enumerate}
+  \end{block}
+\end{frame}
 
-    \begin{block}{Why aren't we looking first for 2 jets?}
-        The analysis software gives a better reconstruction when looking first at events which have up to 4 jets
+\begin{frame}
+  \frametitle{Background processes}
+
+  %\begin{itemize}
+  %\item
+  {\footnotesize{
+    \vspace{-0.3cm}
+    \begin{block}{Events which give same detector response or same final state}
+      \begin{itemize}
+        \item W-boson pair production
+          \vspace{-0.1cm}
+          \begin{itemize}
+            \item Semi-leptonic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  \nu_l l^{\pm}q\overline{q}$
+            \item Hadronic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  q\overline{q}q\overline{q}$
+          \end{itemize}
+          \vspace{-0.2cm}
+        \item Z-boson pair production
+          \vspace{-0.1cm}
+          \begin{itemize}
+            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ \nu_l \overline{\nu_l }q \overline{q}$ 
+            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ l^+ l^- q \overline{q}$ 
+            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ q \overline{q} q\overline{q}$ 
+          \end{itemize}
+          \vspace{-0.2cm}
+        \item Single W-boson production
+          \vspace{-0.1cm}
+          \begin{itemize}
+            \item $e^+e^- \ \rightarrow \ W^{\pm} e^{\pm} \nu_e \ \rightarrow \nu_ee^{\pm}q\overline{q}$
+          \end{itemize}
+          \vspace{-0.2cm}
+        \item Single Z-boson production
+          \vspace{-0.1cm}
+          \begin{itemize}
+            \item $e^+e^- \ \rightarrow \ Z e^-e^+ \ \rightarrow q\overline{q}e^-e^+$
+            \item $e^+e^- \ \rightarrow \ Z \ q\overline{q} \ \rightarrow q\overline{q}q\overline{q}$
+          \end{itemize}
+          \vspace{-0.2cm}
+        \item Higgsstrahlung:
+          \vspace{-0.1cm}
+          \begin{itemize}
+            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ q\overline{q}q\overline{q}$ 
+            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ l^+ l^- q \overline{q}$
+          \end{itemize}
+      \end{itemize}
     \end{block}
-
-    \begin{center}
-        So far, I haven't done the last step to reconstruct the charm coming from the Higgs.
-    \end{center}
-\end{frame}
-
-%-------------------------------
-%                           How to
-%-------------------------------
-\begin{frame}[label=signalReconstruction]
-    \frametitle{Reconstruction of signal coming from H$\nu\nu$}
-    \begin{columns}[c]
-        \begin{column}{4cm}
-             %\framezoom<1><2>[border](-1cm, 0cm)(4cm, 4cm)
-            %\includegraphics[width = 4cm]{../../Crap/Pictures/Emiss.png}
-            %\pgfimage[width = 4cm,height=4cm]{Pictures/eMiss.png}
-        \end{column}
-        \begin{column}{4cm}
-            %\framezoom<1><3>[border](0cm, 0cm)(4cm, 4.2cm)
-            %\includegraphics[width = 4cm]{../../Crap/Pictures/Mmiss.png}
-            %\pgfimage[width = 4cm,height=4cm]{Pictures/mMiss.png}
-        \end{column}
-        \begin{column}{4cm}
-            %\framezoom<1><4>[border](0cm, 0cm)(4cm, 4.2cm)
-            %\includegraphics[width = 4cm]{../../Crap/Pictures/mvis.png}
-            %\pgfimage[width = 4cm,height=4cm]{Pictures/mVis.png}
-        \end{column}
-    \end{columns}
-
-    \begin{center}
-        \textcolor{red}{e$^-_R$, e$^+_L$}
-
-        \textcolor{blue}{e$^-_L$, e$^+_R$}
-    \end{center}
-
-    %\grille
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{A more realistic analysis}
-
-    %\begin{itemize}
-    %\item
-    {\footnotesize{
-            \vspace{-0.3cm}
-            \begin{block}{Need to take into account the background processes:}
-                \begin{itemize}
-                    \item W-boson pair production
-                        \vspace{-0.1cm}
-                        \begin{itemize}
-                            \item Semi-leptonic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  \nu_l l^{\pm}q\overline{q}$
-                            \item Hadronic decay: $e^+e^- \ \rightarrow \ W^+W^- \ \rightarrow \  q\overline{q}q\overline{q}$
-                        \end{itemize}
-                        \vspace{-0.2cm}
-                    \item Z-boson pair production
-                        \vspace{-0.1cm}
-                        \begin{itemize}
-                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ \nu_l \overline{\nu_l }q \overline{q}$ 
-                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ l^+ l^- q \overline{q}$ 
-                            \item $e^+e^- \ \rightarrow \  ZZ \rightarrow \ q \overline{q} q\overline{q}$ 
-                        \end{itemize}
-                        \vspace{-0.2cm}
-                    \item Single W-boson production
-                        \vspace{-0.1cm}
-                        \begin{itemize}
-                            \item $e^+e^- \ \rightarrow \ W^{\pm} e^{\pm} \nu_e \ \rightarrow \nu_ee^{\pm}q\overline{q}$
-                        \end{itemize}
-                        \vspace{-0.2cm}
-                    \item Single Z-boson production
-                        \vspace{-0.1cm}
-                        \begin{itemize}
-                            \item $e^+e^- \ \rightarrow \ Z e^-e^+ \ \rightarrow q\overline{q}e^-e^+$
-                                %\item $e^+e^- \ \rightarrow \ Z \nu\overline{\nu} \ \rightarrow q\overline{q}\nu\overline{\nu} $
-                            \item $e^+e^- \ \rightarrow \ Z \ q\overline{q} \ \rightarrow q\overline{q}q\overline{q}$
-                        \end{itemize}
-                        \vspace{-0.2cm}
-                    \item Higgsstrahlung:
-                        \vspace{-0.1cm}
-                        \begin{itemize}
-                            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ q\overline{q}q\overline{q}$ 
-                            \item $e^+e^- \ \rightarrow ZH \ \rightarrow \ l^+ l^- q \overline{q}$
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-    }}
-    %\end{itemize}
+  }}
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle<1>{Distribution of the visible invariant mass without background}
-    \frametitle<2>{Distribution of the visible invariant mass with background}
-    \begin{center}
-        \centering
-        Polarisation: e$^-_L$, e$^+_R$%} %, luminosity = 250 fb$^-1$}
-        %\only<1>{\includegraphics[width = 8cm]{Pictures/mVis.png}}
-        %\only<2>{
-        %\includegraphics[width = 8cm]{Pictures/mVis_all.png}}
-    \end{center}
+  \frametitle{Distribution of the visible invariant mass with background}
+  \begin{center}
+    $\sqrt{s} = 350~\text{GeV}$, luminosity: $250~\text{fb}^{-1}$ and polarisation: e$^-_L$, e$^+_R$
+    \includegraphics[width = 8cm]{Pictures/mVis_all.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Distribution of each process}
+  \frametitle{Distribution of each processes}
 
-    \begin{center}
-        \footnotesize{
-            \begin{tabular}{|c|c|c|}
-                \hline
-                {Process}&{Cross Section (fb) }&{Expected events}\\\hline
-                Zhad&38610.67&12741520.2\\\hline
-                WW had&6532.83&2155835.19\\\hline
-                WW semilep&8155.94&2691461.62\\\hline
-                ZZ had&600.84&198277.47\\\hline
-                ZZ semilep&564.82&186392.28\\\hline
-                singleW semilep&1625.68&536474.52\\\hline
-                singleZee semi&310.00&102299.31\\\hline
-                singleZnn semi&355.32&117256.43\\\hline
-                Higgs BG&161.96&53447.96\\\hline
-                HiggsToOther&30.48&10059.59\\\hline
-                \hline
-                BG&56948.56&18793024.59\\\hline
-                Signal&68.17&22495.72\\\hline
-                Signf&&5.19\\\hline
-            \end{tabular}
-        }   
-        \[significance = \frac{signal}{\sqrt{signal + background}}\]
-    \end{center}
+  \begin{center}
+    \footnotesize{
+      \begin{tabular}{c c}
+         Process        &  Expected events   \tabularnewline
+        \hline
+        \hline
+        Zhad            & $1.3 \cdot 10^{7}$ \tabularnewline
+        WW had          & $2.2 \cdot 10^{6}$ \tabularnewline
+        WW semilep      & $3.7 \cdot 10^{6}$ \tabularnewline
+        ZZ had          & $2.0 \cdot 10^{5}$ \tabularnewline
+        ZZ semilep      & $1.9 \cdot 10^{5}$ \tabularnewline
+        singleW semilep & $5.4 \cdot 10^{5}$ \tabularnewline
+        singleZee semi  & $1.0 \cdot 10^{5}$ \tabularnewline
+        singleZnn semi  & $1.2 \cdot 10^{5}$ \tabularnewline
+        Higgs BG        & $5.3 \cdot 10^{4}$ \tabularnewline
+        Other Higgs boson decay    & $1.0 \cdot 10^{4}$ \tabularnewline
+        \hline
+        Background              & $1.9 \cdot 10^{7}$ \tabularnewline
+        Signal          & $2.2 \cdot 10^{4}$ \tabularnewline
+        \hline
+      \end{tabular}
+    }   
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -642,12 +636,12 @@
             \item [cut1] Transverse Momentum visible (Ptvis): 35 < Ptvis < 155 GeV
             \item [cut2] Visible mass (mvis): 95 < mvis < 140 GeV
             \item [cut3] Angle between the two jets (cosa): -1 < cosa < 0.22
+            \item [...]
         \end{enumerate}
     \end{exampleblock}
 
 \end{frame}
 
-\subsection{Preliminary results}
 \begin{frame}
     \frametitle{Reduction table after applying cuts}
 
@@ -673,9 +667,28 @@
       \hline %----------------------------
     \end{tabular}
    }
+   \begin{block}{Outlook}
+     \begin{itemize}
+       \item Other method of selection could improve the significance (TMVA)
+       \item Focus on Higgs boson decay mode, especially $H \rightarrow c \overline{c}$ 
+     \end{itemize}
+     \centering
+     $\Rightarrow$ determine vertex detector geometry  
+   \end{block}
 \end{frame}
 
-  
+%-------------------------------
+%                           PLUME Project
+%-------------------------------
+
+\section{PLUME project}
+\begin{frame}
+    \frametitle{Outlines}
+    \tableofcontents[currentsection,hideothersubsections, 
+    sectionstyle=show/shaded,]
+\end{frame}
+
+  \subsection{ILD vertex detector}
   \begin{frame}[label=vxd]
     \frametitle{The ILD Vertex Detector}
 
@@ -697,52 +710,12 @@
 
     \vspace{-0.2cm}
     \begin{alertblock}{Impact parameter resolution}
-        \begin{itemize}
-            \item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
-            \item Hit resolution: $a \simeq 5 \mu m \Rightarrow ~ \sigma_{spatial} < 3 \mu m$
-            \item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15~\%$ X$_0$ 
-        \end{itemize}
-
+      \begin{itemize}
+        \item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
+        \item Hit resolution: $a \simeq 5 \mu m \Rightarrow ~ \sigma_{spatial} < 3 \mu m$
+        \item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15~\%$ X$_0$ 
+      \end{itemize}
     \end{alertblock}
-
-    %\vspace{-0.25cm}
-    %\begin{alertblock}{The ILC vertex detector requirements}
-    %    \begin{itemize}
-    %        %\item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
-    %        %\item Hit resolution: $a \simeq 5 \mu m \Rightarrow \ \sigma_{spatial} < 3 \mu m$
-    %        %\item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15 \% \ X_0 $ for an excellent flavour tagging performance. 
-    %        \item Spatial resolution: $< \ 3~\mu m$
-    %        \item Material budget per measurement point: $\simeq 0.15~\%~X_0 $
-    %    \end{itemize}
-    %\end{alertblock}
-
-    %\vspace{-0.24cm}
-    %\begin{center}
-    %    \includegraphics[width = 6 cm,height = 2.8cm]{Pictures/ild_VXD.png}
-
-    %    %\vspace{-0.2cm}
-    %    \scriptsize{Two geometry options for the ILD vertex detector: 5 layers of single-sided detector (left) or \\ \only<2>{\textbf{3 layers of double-sided detector}} \only<-1>{3 layers of double-sided detector} (right)}
-
-    %\end{center}
-
-\end{frame}
-
-
-
-%-------------------------------
-%                           PLUME Project
-%-------------------------------
-
-  %\section{Vertex detector}
-  %  \subsection{CMOS sensors}
-  %  \subsection{PLUME project}
-  %  \subsection{Impact parameter}
-    
-\section{PLUME project}
-\begin{frame}
-    \frametitle{Outlines}
-    \tableofcontents[currentsection,hideothersubsections, 
-    sectionstyle=show/shaded,]
 \end{frame}
 
 %--------------------------------
@@ -1354,30 +1327,35 @@
     sectionstyle=show/shaded,]
 \end{frame}
 
-    \subsection{Introduction}
+    \subsection{Motivation}
 
     \begin{frame}
       \frametitle{Multiple scattering}
       
+      \vspace{-0.3cm} 
       \begin{columns}[c]
         \begin{column}{6cm}
           \centering
           \includegraphics[width = 5cm]{Pictures/multiple_scattering.jpg}
         \end{column}
         \begin{column}{6cm}
-          \begin{block}{Charged particles traveling through matter}
+          \begin{block}{Charged particles traveling through matter:}
             \begin{itemize}
               \item Lose energy via inelastic collisions with atomic electrons
               \item Deflection by many small angles (Coulomb scattering from nuclei)
             \end{itemize}
+            \centering
+              \[ \theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
           \end{block}
         \end{column}
       \end{columns}
 
-      \begin{block}{Multiple scattering and radiation length}
-        \begin{center}
-          \[ \theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
-        \end{center}
+      \vspace{-0.2cm}
+      \begin{block}{Motivation of measuring the radiation length:}
+        \begin{itemize}
+          \item Tracking system has to detect particle's path and minimise its energy degradation
+          \item Physics analysis: reconstruction of events depends strongly on the energy loss inside the different part of detectors
+        \end{itemize}
       \end{block}
     \end{frame} 
     
@@ -1478,7 +1456,9 @@
     \begin{itemize}
       \item Mechanical deformations are impacting the spatial resolution
       \item An offline algorithm reduces this impact
-      \item 
+      \item Radiation length measured confirms the theoretical estimation $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
+
+         $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$  
     \end{itemize}
 
   \end{frame}
