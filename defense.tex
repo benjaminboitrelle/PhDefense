@@ -139,10 +139,11 @@
     \end{tikzpicture}
 }
 \newcommand{\degres}{\ensuremath{^\circ}}
-\title[Ph. D. defense]{Développement d'une échelle double face pour la trajectométrie en physique des hautes énergies.}
+%\title[Ph. D. defense]{Développement d'une échelle double face pour la trajectométrie en physique des hautes énergies.}
+\title[Ph. D. defense]{Development of a double-sided ladder for tracking in high energy physics}
 \subtitle{Ph. D. defense}
-\institute{DESY}
-\author[Benjamin BOITRELLE]{Benjamin BOITRELLE  \\ Supervisors: Jérôme Baudot, Ingrid Maria Gregor} %\\ On behalf of the PLUME Collaboration
+\institute{Strasbourg}
+\author[Benjamin BOITRELLE]{Benjamin BOITRELLE  \\ \scriptsize{Supervisors: Jérôme Baudot, Ingrid Maria Gregor}} %\\ On behalf of the PLUME Collaboration
 \date{February 13, 2017}
 \defbeamertemplate*{footline}{shadow theme}
 %\titlegraphic{\includegraphics[scale = 0.08]{Pictures/DESY-Logo.png}}
@@ -195,99 +196,97 @@
   \begin{frame}[plain]
     \frametitle{Outlines}
 
-    \tableofcontents
+    \tableofcontents[subsectionstyle=hide]
   \end{frame}
 
   \section{Introduction}
     \subsection{Standard Model}
 
-    \begin{frame}
-      %\frametitle{Standard Model}
-      \frametitle{What is the Universe made of?}
+    %\begin{frame}
+    %  %\frametitle{Standard Model}
+    %  \frametitle{What is the Universe made of?}
 
-      \vspace{-0.3cm}
-      \begin{block}{Matter:}
-      \begin{center}
-        \begin{tabular}{c c c c c c c}
-        \multirow{3}*{\uncover<1->{Fermions}} & \multicolumn{3}{ c }{\uncover<2->{Leptons}} & \multicolumn{3}{ c }{\uncover<2->{Quarks}} \tabularnewline
-          & \uncover<3->{$e^-$ & $\mu$ & $\tau$} & \uncover<4->{$u$ & $c$ & $t$} \tabularnewline 
-          & \uncover<3->{$\nu_{e}$ & $\nu_{\mu}$ & $\nu_{\tau}$} & \uncover<4->{$d$ & $s$ & $b$ } \tabularnewline 
-          
-        \end{tabular}
-        %\includegraphics[width = 0.6\textwidth]{Pictures/elementaryParticles.jpg}
-      \end{center}
-      \end{block}
-      
-      \vspace{-0.25cm}
-      \uncover<5->{
-        \begin{block}{Antimatter:}
-          \begin{itemize}
-            \item To each fermion is associated an anti-fermion
-            \item Same quantum numbers as fermions BUT opposite electric charge
-          \end{itemize}
-        \end{block}
-      }
+    %  \vspace{-0.3cm}
+    %  \begin{block}{Matter:}
+    %  \begin{center}
+    %    \begin{tabular}{c c c c c c c}
+    %    \multirow{3}*{\uncover<1->{Fermions}} & \multicolumn{3}{ c }{\uncover<2->{Leptons}} & \multicolumn{3}{ c }{\uncover<2->{Quarks}} \tabularnewline
+    %      & \uncover<3->{$e^-$ & $\mu$ & $\tau$} & \uncover<4->{$u$ & $c$ & $t$} \tabularnewline 
+    %      & \uncover<3->{$\nu_{e}$ & $\nu_{\mu}$ & $\nu_{\tau}$} & \uncover<4->{$d$ & $s$ & $b$ } \tabularnewline 
+    %      
+    %    \end{tabular}
+    %    %\includegraphics[width = 0.6\textwidth]{Pictures/elementaryParticles.jpg}
+    %  \end{center}
+    %  \end{block}
+    %  
+    %  \vspace{-0.25cm}
+    %  \uncover<5->{
+    %    \begin{block}{Antimatter:}
+    %      \begin{itemize}
+    %        \item To each fermion is associated an anti-fermion
+    %        \item Same quantum numbers as fermions BUT opposite electric charge
+    %      \end{itemize}
+    %    \end{block}
+    %  }
 
-      \vspace{-0.25cm}
-      \uncover<6->{\begin{block}{Forces:}
-      \begin{center}
-        \begin{tabular}{c c c c}
-        \multirow{5}*{\uncover<6->{Bosons}} & \uncover<7->{$\gamma$} & \uncover<7->{$\rightarrow$} & \uncover<7->{E.M. interaction} \tabularnewline
-        & \uncover<8->{$Z^{0}/W^{\pm}$} & \uncover<8->{$\rightarrow$} & \uncover<8->{Weak interaction} \tabularnewline
-        & \uncover<9->{$g$ & $\rightarrow$} & \uncover<9->{Strong interaction} \tabularnewline
-        & \uncover<10->{\textcolor{gray}{graviton} & \textcolor{gray}{$\rightarrow$}} & \uncover<10->{\textcolor{gray}{Gravitation}} \tabularnewline
-        %\only<11->{\hline}
-        & \uncover<11->{$H$ & $\rightarrow$} & \uncover<11->{Higgs field} \tabularnewline
-        \end{tabular}
-      \end{center}
-      \end{block}}
+    %  \vspace{-0.25cm}
+    %  \uncover<6->{\begin{block}{Forces:}
+    %  \begin{center}
+    %    \begin{tabular}{c c c c}
+    %    \multirow{5}*{\uncover<6->{Bosons}} & \uncover<7->{$\gamma$} & \uncover<7->{$\rightarrow$} & \uncover<7->{E.M. interaction} \tabularnewline
+    %    & \uncover<8->{$Z^{0}/W^{\pm}$} & \uncover<8->{$\rightarrow$} & \uncover<8->{Weak interaction} \tabularnewline
+    %    & \uncover<9->{$g$ & $\rightarrow$} & \uncover<9->{Strong interaction} \tabularnewline
+    %    & \uncover<10->{\textcolor{gray}{graviton} & \textcolor{gray}{$\rightarrow$}} & \uncover<10->{\textcolor{gray}{Gravitation}} \tabularnewline
+    %    %\only<11->{\hline}
+    %    & \uncover<11->{$H$ & $\rightarrow$} & \uncover<11->{Higgs field} \tabularnewline
+    %    \end{tabular}
+    %  \end{center}
+    %  \end{block}}
 
-    \end{frame}
+    %\end{frame}
 
-    \begin{frame}
-      \frametitle{Standard Model}
+   \begin{frame}
+     \frametitle{Electroweak symmetry breaking}
 
-      \begin{block}{Quantum field theory}
+     \begin{block}{Standard Model:}
         \begin{itemize}
-          \item Lagrangian field theory
-          \item Particles $\Rightarrow$ matter field
-          \item Bosons $\Rightarrow$ gauge field
-          \item Symmetries
+          \item Well-tested physics theory: predict precisely a wide variety of phenomena
+          \item Electro-Weak Symmetry Breaking (EWSB): explain how particles acquire mass via Higgs mechanism
+          \item Last milestone: discovery of the Higgs Boson
         \end{itemize}
-      \end{block}
+     \end{block}
 
-      \begin{block}{Standard Model}
-        \begin{itemize}
-          \item Interactions: QED + EW + QCD
-          \item Symmetry group: $U(1) \otimes SU(2) \otimes SU(3)$
-          \item Spontaneous electroweak symmetry via Higgs mechanism \\ $\Rightarrow$ particles' mass
-        \end{itemize}
-      \end{block}
-    \end{frame}
-
+     \begin{block}{Electroweak symmetry breaking}
+     \end{block}
+   \end{frame} 
+    
     \begin{frame}
       \frametitle{Open questions}
 
-      \begin{alertblock}{Limitations}
+      %\begin{block}{Standard model:}
+      %  \begin{itemize}
+      %    \item Well-tested physics theory: predict precisely a wide variety of phenomena
+      %    \item Electro-Weak Symmetry Breaking (EWSB): explain how particles acquire mass via Higgs mechanism
+      %    \item Last milestone: discovery of the Higgs Boson
+      %    %\item EWSB: explain how particle acquires mass
+      %  \end{itemize}
+      %\end{block}
+
+      \begin{alertblock}{Limitations:}
         \begin{itemize}
-          \item Why are they 3 families of particles?
+          \item Why are they 3 generations of leptons and quarks?
+          %\item Why such a difference mass scale between generations?
           \item Neutrino oscillation (theory does not predict mass of neutrino)
-          \item Dark matter and dark energy
-          \item ...
+          \item What are dark matter and dark energy?
+          \item Why electroweak symmetry is breaking?
+          \item Is there only one Higgs boson as defined in SM?
         \end{itemize}
       \end{alertblock}
+          %\centering{\textbf{$\Rightarrow$ Need new experimental program}} 
       
-      \begin{block}{Other theories}
-        \begin{itemize}
-          \item SUSY
-          \item GUT
-          \item Technicolor
-          \item ...
-        \end{itemize}
-      \end{block}
     \end{frame}
-     
-  \begin{frame}
+    
+    \begin{frame}
     \frametitle{How to study particle physics?}
 
     \begin{columns}[c]
@@ -295,8 +294,9 @@
         \centering
         \includegraphics[width = 5cm]{Pictures/instrument.png}
       \end{column}
+      
       \begin{column}{5cm}
-        \begin{block}{LHC}
+        \begin{block}{LHC:}
           \begin{itemize}
             \item Centre-of-mass energy $\sqrt{s} = 14~\text{TeV}$
             \item Collision with composites particles (protons or Pb)
@@ -306,12 +306,37 @@
                     \item Trigger needed
                 \end{itemize}
             \item Discovery machine
-            \item Need a complementary machine to perform more precise
           \end{itemize}
         \end{block}
       \end{column}
     \end{columns}
+
+    \centering{\textbf{$\Rightarrow$ Need new experimental program}} 
   \end{frame}
+
+    %\begin{frame}
+    %  \frametitle{Standard Model}
+
+    %  \begin{block}{Quantum field theory}
+    %    \begin{itemize}
+    %      \item Lagrangian field theory
+    %      \item Particles $\Rightarrow$ matter field
+    %      \item Bosons $\Rightarrow$ gauge field
+    %      \item Symmetries
+    %    \end{itemize}
+    %  \end{block}
+
+    %  \begin{block}{Standard Model}
+    %    \begin{itemize}
+    %      \item Interactions: QED + EW + QCD
+    %      \item Symmetry group: $U(1) \otimes SU(2) \otimes SU(3)$
+    %      \item Spontaneous electroweak symmetry via Higgs mechanism \\ $\Rightarrow$ particles' mass
+    %    \end{itemize}
+    %  \end{block}
+    %\end{frame}
+
+
+
     
     \subsection{ILC and ILD}
 %-------------------------------
@@ -351,7 +376,7 @@
       \begin{block}{Silicon Detector}
         \footnotesize{
         \begin{itemize}
-          \item Silicon tracking \\ (radius = 1.2m)
+          \item Silicon tracking \\ (radius = 1.2 m)
           \item B$_{field}$ = 5 T
         \end{itemize}
         }
@@ -385,27 +410,33 @@
   
 \end{frame}
   
-\begin{frame}
-    \frametitle{Overview of the ILD}
+\section{Higgs boson study}
+  \begin{frame}
+    \frametitle{Outlines}
+    \tableofcontents[currentsection,hideothersubsections, 
+    sectionstyle=show/shaded,]
+  \end{frame}
 
-    \begin{center}
-        \includegraphics[width = 11cm]{Pictures/ild-detector-ilc.jpg}
-    \end{center}
-\end{frame}
-
-  \subsection{Example of study}
+  \subsection{Motivations}
 
     \begin{frame}
       \frametitle{Higgs boson study}
+
+      \begin{block}{Electroweak Symmetry Breaking}
+        \begin{itemize}
+          \item 2012: Discovery of the Higgs boson (CMS and ATLAS)
+        \end{itemize}
+
+      \end{block}
+
       \begin{itemize}
         \item Particle's mass: electroweak symmetry breaking via Higgs-Brout-Englert mechanism
-        \item Discovery of the Higgs boson in 2012 by CMS and ATLAS (LHC)
       \end{itemize}
       \begin{block}{Measurements @ LHC:}
         \begin{itemize}
           \item Mass: $125.7 \pm 0.4$ GeV
           \item Spin: 0
-          \item Couplings of Higgs boson to fermions and bosons, except $c$-quarks, gluons and Higgs self-coupling
+          \item Couplings of Higgs boson to fermions and bosons, \textbf{except $c$-quarks, gluons and Higgs self-coupling}
         \end{itemize}
       \end{block}
     \end{frame}
@@ -587,8 +618,16 @@
   \frametitle{Distribution of the visible invariant mass with background}
   \begin{center}
     $\sqrt{s} = 350~\text{GeV}$, luminosity: $250~\text{fb}^{-1}$ and polarisation: e$^-_L$, e$^+_R$
-    \includegraphics[width = 8cm]{Pictures/mVis_all.png}
+    \includegraphics[width = \textwidth]{Pictures/mVis_all.png}
   \end{center}
+  
+  \begin{tikzpicture}[overlay,remember picture, red, shift={(current page.south west)}]
+    \begin{scope}
+      \draw[line width = 2pt,-latex] (6,4) -- (3.7,2.8);
+    \end{scope}
+  \end{tikzpicture}
+  
+  %\grille
 \end{frame}
 
 \begin{frame}
@@ -597,22 +636,23 @@
   \begin{center}
     \footnotesize{
       \begin{tabular}{c c}
+        \hline
          Process        &  Expected events   \tabularnewline
         \hline
         \hline
-        Zhad            & $1.3 \cdot 10^{7}$ \tabularnewline
-        WW had          & $2.2 \cdot 10^{6}$ \tabularnewline
-        WW semilep      & $3.7 \cdot 10^{6}$ \tabularnewline
-        ZZ had          & $2.0 \cdot 10^{5}$ \tabularnewline
-        ZZ semilep      & $1.9 \cdot 10^{5}$ \tabularnewline
-        singleW semilep & $5.4 \cdot 10^{5}$ \tabularnewline
-        singleZee semi  & $1.0 \cdot 10^{5}$ \tabularnewline
-        singleZnn semi  & $1.2 \cdot 10^{5}$ \tabularnewline
-        Higgs BG        & $5.3 \cdot 10^{4}$ \tabularnewline
-        Other Higgs boson decay    & $1.0 \cdot 10^{4}$ \tabularnewline
+        $Z$ hadronic decay            & $1.3 \cdot 10^{7}$ \tabularnewline
+        $WW$ hadronic decay           & $2.2 \cdot 10^{6}$ \tabularnewline
+        $WW$ semi-leptonic decay      & $3.7 \cdot 10^{6}$ \tabularnewline
+        $ZZ$ hadronic decay           & $2.0 \cdot 10^{5}$ \tabularnewline
+        $ZZ$ semi-leptonic decay      & $1.9 \cdot 10^{5}$ \tabularnewline
+        $W$ semi-leptonic decay       & $5.4 \cdot 10^{5}$ \tabularnewline
+        $Zee$ semi-leptonic decay     & $1.0 \cdot 10^{5}$ \tabularnewline
+        $Z\nu\nu$ semi-leptonic decay & $1.2 \cdot 10^{5}$ \tabularnewline
+        Higgs BG                      & $5.3 \cdot 10^{4}$ \tabularnewline
+        Other Higgs boson decay       & $1.0 \cdot 10^{4}$ \tabularnewline
         \hline
-        Background              & $1.9 \cdot 10^{7}$ \tabularnewline
-        Signal          & $2.2 \cdot 10^{4}$ \tabularnewline
+        Background                    & $1.9 \cdot 10^{7}$ \tabularnewline
+        Signal                        & $2.2 \cdot 10^{4}$ \tabularnewline
         \hline
       \end{tabular}
     }   
@@ -620,25 +660,27 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Reducing the background}
+  \frametitle{Reducing the background}
+    
+  \vspace{-0.2cm}
+  \begin{block}{Find optimized cuts:}
+      \begin{itemize}
+          \item For each cut, try to find the one which reduces the signal the least
+              \[significance = \frac{signal}{\sqrt{signal + background}}\]
+          \item Apply the cuts from the one which gives best significance to the one gives the worst
+      \end{itemize}
+  \end{block}
 
-    \begin{block}{Find optimized cuts}
-        \begin{itemize}
-            \item For each cut, try to find the one which reduces the signal the least
-                \[significance = \frac{signal}{\sqrt{signal + background}}\]
-            \item Apply the cuts from the one which gives best significance to the one gives the worst
-        \end{itemize}
-    \end{block}
-
-    \begin{exampleblock}{Cuts to reduce the background}
-        \begin{enumerate}
-            \item [cut0] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
-            \item [cut1] Transverse Momentum visible (Ptvis): 35 < Ptvis < 155 GeV
-            \item [cut2] Visible mass (mvis): 95 < mvis < 140 GeV
-            \item [cut3] Angle between the two jets (cosa): -1 < cosa < 0.22
-            \item [...]
-        \end{enumerate}
-    \end{exampleblock}
+  \vspace{-0.1cm}
+  \begin{exampleblock}{\hyperlink{cuts}{Sequential cuts strategy:}}
+      \begin{enumerate}
+          \item [cut0] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
+          \item [cut1] Transverse Momentum visible (Ptvis): 35 < $\rm{P_{t}^{vis}}$ < 155 GeV
+          \item [cut2] Visible mass (mvis): 95 < $\rm{m_{vis}}$ < 140 GeV
+          \item [cut3] Angle between the momentum axis of both jets ($\cos{\alpha}$): -1 < $\cos{\alpha}$ < 0.22
+          \item [...]
+      \end{enumerate}
+  \end{exampleblock}
 
 \end{frame}
 
@@ -662,8 +704,8 @@
       {$-1 <~\rm{\cos{\alpha}}< 0.22$}            & $8.76 \cdot 10^{4}$ & $1.57 \cdot 10^{4}$ & $48.8$        \tabularnewline
       $26 < (\rm{N.R.C > 1GeV}) < 99$             & $2.25 \cdot 10^{4}$ & $1.19 \cdot 10^{4}$ & $56.3$        \tabularnewline
       $0.11 < \rm{DurhamjD2ym} < 1$               & $1.78 \cdot 10^{4}$ & $1.05 \cdot 10^{4}$ & $62.3$        \tabularnewline
-      $0 < \rm{abs(RefinedjPzvis)} < 113~\rm{GeV}$& $1.51 \cdot 10^{4}$ & $1.01 \cdot 10^{4}$ & $63.5$        \tabularnewline
-      $156 < \rm{RefinedjEmiss} < 230~\rm{GeV}$   & $1.37 \cdot 10^{4}$ & $9.85 \cdot 10^{3}$ & $64.1$        \tabularnewline      
+      $0 < \rm{abs(P_{z}^{vis})} < 113~\rm{GeV}$& $1.51 \cdot 10^{4}$ & $1.01 \cdot 10^{4}$ & $63.5$        \tabularnewline
+      $156 < \rm{E_{miss}} < 230~\rm{GeV}$   & $1.37 \cdot 10^{4}$ & $9.85 \cdot 10^{3}$ & $64.1$        \tabularnewline      
       \hline %----------------------------
     \end{tabular}
    }
@@ -681,7 +723,7 @@
 %                           PLUME Project
 %-------------------------------
 
-\section{PLUME project}
+\section{Detector development}
 \begin{frame}
     \frametitle{Outlines}
     \tableofcontents[currentsection,hideothersubsections, 
@@ -693,19 +735,11 @@
     \frametitle{The ILD Vertex Detector}
 
     \vspace{-0.3cm}
-    \begin{block}{Two geometry options}
+    \begin{block}{Geometry option: 3 double-sided layers}
       \begin{center}
-        \includegraphics[width = 6 cm,height = 2.8cm]{Pictures/ild_VXD.png}
+        \includegraphics[width = 0.3\textwidth]{Pictures/ild_vxd_3layers.jpg}
       \end{center}
-      \vspace{-0.5cm}
-      \begin{columns}[t]
-        \begin{column}{5cm}
-          5 single-sided layers
-        \end{column}
-        \begin{column}{5cm}
-          3 double-sided layers
-        \end{column}
-      \end{columns}
+         
     \end{block}
 
     \vspace{-0.2cm}
@@ -717,6 +751,23 @@
       \end{itemize}
     \end{alertblock}
 \end{frame}
+
+%\subsection{Main aims}
+%-------------------------------
+%                           Aims
+%-------------------------------
+
+\begin{frame}
+  \frametitle{Main aims}
+
+  \begin{itemize}
+    \item \only<1>{Constraint material budget $\Rightarrow$ $< 0.3~\%$ X$_0$} \only<2>{\textbf{Constraint material budget $\Rightarrow$ $< 0.3~\%$ X$_0$}}
+    \item \only<1>{Study impact of the mechanical structure on sensor performance} \only<2>{\textbf{Study impact of the mechanical structure on sensor performance}}
+    \item Study the advantage of having two measurement points (\hyperlink{miniVec}{mini vectors})
+  \end{itemize}
+\end{frame}
+
+
 
 %--------------------------------
 %       PART I: PLUME
@@ -797,7 +848,7 @@
 %-------------------------------
 
 \begin{frame}
-  \frametitle{Foam support structure}
+  \frametitle{Silicon-Carbide foam support structure}
 
   \vspace{-0.6cm}
   \begin{columns}[t]
@@ -896,24 +947,48 @@
   %\grille
 \end{frame}
 
-\subsection{Main aims}
-%-------------------------------
-%                           Aims
-%-------------------------------
+  \subsection{Test beam}
+
+  \begin{frame}
+    \frametitle{Test beam}
+
+    \begin{block}{Motivation}
+      Test detector under real conditions to determine its performance
+    \end{block}
+      
+    \begin{exampleblock}{Set-up}
+      \centering
+      \includegraphics[width = 0.6\textwidth]{Pictures/testBeamAcquisition.png}
+    \end{exampleblock}
+  
+  \end{frame}
 
 \begin{frame}
-  \frametitle{Main aims}
+    \frametitle{Track-hit residual}
 
-  \begin{itemize}
-    \item Constraint material budget $\Rightarrow$ $< 0.3~\%$ X$_0$
-    \item Study how to implement \hyperlink{powerPulsing}{power pulsing} and its impact on a strong magnetic field
-    \item Study the advantage of having two measurement points (\hyperlink{miniVec}{mini vectors})
-    \item Study impact of the mechanical structure on sensor performance
-    %\item Try to reach a material budget of less than 0.3 \% X$_0$ for double-sided ladders
-    %\item Use a \hyperlink{powerPulsing}{power pulsing} (200 ms period) in a strong magnetic field with air cooling to decrease the power consumption of the ladder
-    %\item Study of the advantage to have two measurement points in the tracking of a particle (\hyperlink{miniVec}{mini vectors}) 
-    %\item Study of the alignment and \textbf{the spatial resolution}
-  \end{itemize}
+    \begin{columns}[t]
+      \begin{column}{7cm}
+        \begin{center}
+          \includegraphics[width = 7cm]{Pictures/residual_explanation.png}
+        \end{center}
+      \end{column}
+      \begin{column}{4cm}
+        \scriptsize{
+        \begin{block}{Device Under Test (DUT) alignment:}
+          \begin{itemize}
+            \item Telescope planes defined particle's track
+            \item Alignment of DUT in local coordinate system:
+              \begin{itemize}
+                \scriptsize{
+                \item Define a maximal range in which a hit can be associated to a track
+                \item Find the best tilt and position to minimise the distance between a hit and its associated track.
+                }
+              \end{itemize}
+          \end{itemize}
+        \end{block}
+      }
+      \end{column}
+    \end{columns}
 \end{frame}
 
   \section{Mechanical deformation}
@@ -923,6 +998,32 @@
     \tableofcontents[currentsection,hideothersubsections, 
     sectionstyle=show/shaded]
 \end{frame}
+
+  \begin{frame}
+    \frametitle{Metrology of module's surface}
+
+    \begin{center}
+      Performed at Bristol with a dummy ladder
+    \end{center}
+
+    \begin{columns}[c]
+      \begin{column}{6cm}
+        \begin{center}
+          \includegraphics[width = 5.7cm]{Pictures/SideAPlumeLadder2010_M20.png}
+        \end{center}
+      \end{column}
+
+      \begin{column}{6cm}
+        \begin{center}
+          \includegraphics[width = 6cm]{Pictures/SideBPlumeLadder2010_M20.png}
+        \end{center}
+      \end{column}
+    \end{columns}
+
+    \begin{center}
+      Does it have an impact on ladder's performance?
+    \end{center}
+  \end{frame}
 
 %-------------------------------
 %   TB
@@ -952,7 +1053,7 @@
           \begin{itemize}
             \item In threshold (5 and 6 mV)
             \item In position (sensor 1-2, 3-4 and 5-6)
-            \item Without and with angle (between $30^{circ}$ and $40^{circ}$)
+            \item Without and with angle (between $30^{\circ}$ and $40^{\circ}$)
             \item With two different air flow speeds ($\simeq 3$ to 6 $\text{ms}^{-1}$)
           \end{itemize}
         \end{block}
@@ -1008,33 +1109,7 @@
     %\grille
 \end{frame}
 
-\begin{frame}
-    \frametitle{Track-hit residual}
 
-    \begin{columns}[t]
-      \begin{column}{7cm}
-        \begin{center}
-          \includegraphics[width = 7cm]{Pictures/residual_explanation.png}
-        \end{center}
-      \end{column}
-      \begin{column}{4cm}
-        \scriptsize{
-        \begin{block}{Device Under Test (DUT) alignment:}
-          \begin{itemize}
-            \item Telescope planes defined particle's track
-            \item Alignment of DUT in local coordinate system:
-              \begin{itemize}
-                \scriptsize{
-                \item Define a maximal range in which a hit can be associated to a track
-                \item Find the best tilt and position to minimise the distance between a hit and its associated track.
-                }
-              \end{itemize}
-          \end{itemize}
-        \end{block}
-      }
-      \end{column}
-    \end{columns}
-\end{frame}
 
 %-------------------------------
 %                           RUN Normal incidence
@@ -1380,34 +1455,41 @@
       \end{columns}
     \end{frame}
 
-    \begin{frame}
 
-      \begin{center}
-        \includegraphics[width = \textwidth]{Pictures/testBeamAcquisition.png}
-      \end{center}
-    \end{frame}
 
     \subsection{Theoretical estimation}
     
     \begin{frame}
       \frametitle{Estimation of the radiation length}
 
-      \begin{columns}[t]
+      \begin{columns}[c]
         \begin{column}{5cm}
+          \centering
+          \includegraphics[width = \textwidth]{Pictures/X0.pdf}
+          
         \end{column}
         \begin{column}{5cm}
-          \begin{block}{Beam passes through}
-            \begin{itemize}
-              \item $2 \times$ Mi-26 (thinned down to $\sim 50~\mu$m): $0.053~\%$ X$_0$
-              \item $4 \times$ glue layers: $\sim 0.01~\%$ X$_0$
-              \item $1 \times$ SiC foam: $\sim 0.184~\%$ X$_0$
-              \item $2 \times$ flex-cable: $\sim 0.084 - 0.092~\%$ X$_0$
-              %\item $2 \times$ flex cable: $\sim 0.084~-~0.092~\%$ X$_0$
-            \end{itemize}
-            $\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
-          \end{block}
+          \centering
+
+          \includegraphics[width = \textwidth]{Pictures/X02.pdf}
+          %\begin{block}{Beam passes through}
+          %  %\begin{itemize}
+          %  %  \item $2 \times$ Mi-26 (thinned down to $\sim 50~\mu$m): $0.053~\%$ X$_0$
+          %  %  \item $4 \times$ glue layers: $\sim 0.01~\%$ X$_0$
+          %  %  \item $1 \times$ SiC foam: $\sim 0.184~\%$ X$_0$
+          %  %  \item $2 \times$ flex-cable: $\sim 0.084 - 0.092~\%$ X$_0$
+          %  %  %\item $2 \times$ flex cable: $\sim 0.084~-~0.092~\%$ X$_0$
+          %  %\end{itemize}
+          %  %$\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
+          %\end{block}
         \end{column}
       \end{columns}
+
+      \begin{block}{Total material budget}
+        \centering 
+        Depends on flex-cable fill factor (25~\% or 30~\%)
+        $\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
+      \end{block}
     \end{frame}
 
     \subsection{Results}
@@ -1451,15 +1533,34 @@
   \section{Conclusion and outlook} 
 
   \begin{frame}
-    \frametitle{Summary}
+    \frametitle{Conclusion}
 
-    \begin{itemize}
-      \item Mechanical deformations are impacting the spatial resolution
-      \item An offline algorithm reduces this impact
-      \item Radiation length measured confirms the theoretical estimation $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
+    \begin{block}{Context:}
+      \begin{itemize}
+        \item ILC: next collider to study precisely EWSB (and other physics scenarios)
+        \item Performances to achieve imposes R\&D detector development
+      \end{itemize}
+    \end{block}
 
-         $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$  
-    \end{itemize}
+    \begin{block}{blabla}
+      \begin{itemize}
+        \item Mechanical deformations observed are impacting ladder's performance
+        \item Radiation length measurement: 
+        \begin{center}
+          $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
+
+          $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$
+        \end{center}
+      \end{itemize}
+    \end{block}
+
+    %\begin{itemize}
+    %  \item Mechanical deformations are impacting the spatial resolution
+    %  \item An offline algorithm reduces this impact
+    %  \item Radiation length measured confirms the theoretical estimation $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
+
+    %     $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$  
+    %\end{itemize}
 
   \end{frame}
 
@@ -1471,6 +1572,7 @@
       \item New prototype with a material budget of $0.35~\%$ X$_0$ has been built, tested in laboratory but not yet in real conditions
       \item Double-sided ladders could be enriched with sensors having different characteristics (fast integration time VS good spatial resolution)
       \item Using the beam structure to apply a power-pulsing method
+      \item Application of PLUME in SuperKEKB (BEAST)
     \end{itemize}
 
   \end{frame}
@@ -1758,6 +1860,29 @@
 
   \end{frame}
 
+
+\begin{frame}[plain]
+    \frametitle{Overview of the ILD}
+
+    \begin{center}
+        \includegraphics[width = 11cm]{Pictures/ild-detector-ilc.jpg}
+    \end{center}
+\end{frame}
+
+\begin{frame}[plain,label=cuts]
+  \frametitle{Sequential cuts strategy}
+      \begin{enumerate}
+          \item [cut0:] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
+          \item [cut1:] Transverse Momentum visible (Ptvis): 35 < $\rm{P_{t}^{vis}}$ < 155 GeV
+          \item [cut2:] Visible mass (mvis): 95 < $\rm{m_{vis}}$ < 140 GeV
+          \item [cut3:] Angle between the momentum axis of both jets ($\cos{\alpha}$): -1 < $\cos{\alpha}$ < 0.22
+          \item [cut4:] Number of reconstructed particle 
+          \item [cut5:] D2YM
+          \item [cut6:] Visible longitudial momentum ($\rm{abs(P_{z}^{vis})}$)
+          \item [cut7:] $\rm{E_{miss}}$
+      \end{enumerate}
+\end{frame}
+
 %-------------------------------
 %   BACK-UP: ILC Polarisation
 %-------------------------------
@@ -1771,6 +1896,9 @@
       }
     \end{block}
   \end{frame}
+
+
+
 
     
    % \begin{frame}[label=Xsec,plain]
