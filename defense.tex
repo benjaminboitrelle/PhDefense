@@ -256,8 +256,6 @@
         \end{itemize}
      \end{block}
 
-     \begin{block}{Electroweak symmetry breaking}
-     \end{block}
    \end{frame} 
     
     \begin{frame}
@@ -416,7 +414,7 @@
     \end{minipage}
   \end{frame}
 
-  \subsection{Motivations}
+  \subsection{Motivation}
 
     \begin{frame}
       \frametitle{Higgs boson study}
@@ -870,17 +868,19 @@
 \begin{frame}
   \frametitle{What does it look like?}
 
+  \vspace{-0.2cm}
   \begin{center}
-    \includegraphics[width = 10 cm]{Pictures/PLUME_copper_module.png}
+    %\includegraphics[width = 10 cm]{Pictures/PLUME_copper_module.png}
+    \includegraphics[width = 0.8\textwidth]{Pictures/Plume2_vue_eclatee.jpg}
 
-    Picture of one module with copper traces.
+    %Picture of one module with copper traces.
   \end{center}
 
   \vspace{-0.2cm}
   \begin{center}
     \includegraphics[width = 10 cm]{Pictures/scheme_plume.png}
 
-    Scheme of one PLUME ladder.
+    %Scheme of one PLUME ladder.
   \end{center}
 \end{frame}
 
@@ -1465,25 +1465,29 @@
     \frametitle{Multiple scattering}
     
     \vspace{-0.4cm} 
-    \begin{columns}[c]
-      \begin{column}{6cm}
-        \centering
-        \includegraphics[width = 5cm]{Pictures/multiple_scattering.jpg}
-      \end{column}
-      \begin{column}{6cm}
-        \begin{block}{Charged particles traveling through matter:}
+    \begin{block}{Charged particles traveling through matter:}
+      \vspace{-0.3cm}
+      \begin{columns}[c]
+        \begin{column}{5cm}
+          \footnotesize
           \begin{itemize}
             \item Lose energy via inelastic collisions with atomic electrons
             \item Deflection by many small angles (Coulomb scattering from nuclei)
+            \item Standard deviation of the scattering angle distribution described by Highland formula
           \end{itemize}
           \centering
             \[ \theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
-        \end{block}
-      \end{column}
-    \end{columns}
+        \end{column}
+        \begin{column}{6cm}
+          \centering
+          \includegraphics[width = 5cm]{Pictures/multiple_scattering.jpg}
+        \end{column}
+      \end{columns}
+    \end{block}
 
     \vspace{-0.2cm}
     \begin{block}{Motivation of measuring the radiation length:}
+      \footnotesize
       \begin{itemize}
         \item Tracking system has to detect particle's path and minimise its energy degradation
         \item Physics analysis: reconstruction of events depends strongly on the energy loss inside the different part of detectors
@@ -1565,7 +1569,7 @@
       \end{center}
       \vspace{-0.2cm}
       \begin{block}{Determination of $\theta_0$}
-        $\theta_0 = \sqrt{k^2 - F}$
+        \centering{$\theta_0 = \sqrt{k^2 - F}$}
         \begin{itemize}
           \item $k$ = width of the kink angle distribution fit
           \item $F$ = Offset parameter from the GBL track fitting algorithm
@@ -1737,6 +1741,61 @@
     \end{itemize}
   \end{frame}
 
+%-------------------------------
+%   BACK-UP: Ladder assembly
+%-------------------------------
+  \begin{frame}[plain]
+    \frametitle{Ladder assembly}
+
+    \begin{center}
+      \uncover<1->{\includegraphics[width = 0.8\textwidth]{Pictures/plumeLadderAssembly_step1.png}}
+      \
+      \uncover<2>{\includegraphics[width = 0.8\textwidth]{Pictures/plumeLadderAssembly_step2.png}}
+    \end{center}
+
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: PLUME history
+%-------------------------------
+  \begin{frame}[plain]
+    \frametitle{PLUME history}
+
+    \begin{columns}[t]
+      \begin{column}{5cm}
+        \centering
+        PLUME-V0 (2009)
+
+        \includegraphics[width = \textwidth]{Pictures/plume_ladder2009_1.jpg}
+      \end{column}
+      \begin{column}{5cm}
+        \centering
+        PLUME-V1 (2010)
+
+        \includegraphics[width = \textwidth]{Pictures/plume_ladder2010_frontView.jpg}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: Mi26
+%-------------------------------
+
+  \begin{frame}[plain]
+    \frametitle{MIMOSA-26 description}
+
+    \begin{center}
+      \includegraphics[width = \textwidth]{Pictures/mimosa26_shortDescription.png}
+    \end{center}
+  \end{frame}
+
+  \begin{frame}[plain]
+    \frametitle{MIMOSA-26 architecture}
+
+    \begin{center}
+      \includegraphics[width = \textwidth]{Pictures/mi26_architecture.pdf}
+    \end{center}
+  \end{frame}
 %-------------------------------
 %   BACK-UP: SUZE
 %-------------------------------
