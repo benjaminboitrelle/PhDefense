@@ -250,10 +250,12 @@
 
      %\begin{block}{Standard Model:}
         \begin{itemize}
-          \item Well-tested physics theory: predict precisely a wide variety of phenomena
-          \item Mass generation mechanism of particles: Higgs mechanism and electroweak symmetry breaking (EWSB)
+          \item Well-tested physics theory: predicts precisely a wide variety of phenomena with elementary particles
+          \item Predicts a mechanism which breaks the electroweak symmetry (EWSB) and generates mass of particles \\
+          $\Rightarrow$ Higgs mechanism: one gauge boson is expected in the SM (the Higgs boson)
+          %\item Mass generation mechanism of particles: Higgs mechanism and electroweak symmetry breaking (EWSB)
           %\item Electro-Weak Symmetry Breaking (EWSB): explain how particles acquire mass via Higgs mechanism
-          \item Last milestone: discovery of the Higgs Boson that confirms the EWSB
+          \item Last milestone: discovery of a particle compatible with the Higgs Boson, which would confirm the EWSB
         \end{itemize}
       
       \begin{center}
@@ -275,14 +277,13 @@
       %  \end{itemize}
       %\end{block}
 
-      \begin{alertblock}{Limitations:}
+      \begin{alertblock}{Limitations}
         \begin{itemize}
-          \item Why are they 3 generations of leptons and quarks?
-          %\item Why such a difference mass scale between generations?
-          \item Neutrino oscillation (theory does not predict mass of neutrino)
-          \item What are dark matter and dark energy?
-          \item Why electroweak symmetry is breaking?
+          \item Why electroweak symmetry is broken?
           \item Is there only one Higgs boson as defined in SM?
+          \item Why are they 3 generations of leptons and quarks?
+          \item Neutrino oscillation (theory does not predict mass of neutrino)
+          \item What are the dark matter and the dark energy?
         \end{itemize}
       \end{alertblock}
           %\centering{\textbf{$\Rightarrow$ Need new experimental program}} 
@@ -292,13 +293,77 @@
     \begin{frame}
     \frametitle{How to study particle physics?}
 
+    \only<1>{
+      \vspace{0.3cm}
+      \centering
+      \includegraphics[width = 5cm]{Pictures/instrument.png}
+    }
+
+    \uncover<2->{
+      \begin{columns}[c]
+        \begin{column}{4cm}
+          \centering
+          \includegraphics[width = 5cm]{Pictures/instrument.png}
+        \end{column}
+        \begin{column}{5cm}
+          \centering
+          \includegraphics[width = 6cm]{Pictures/terascale_schematic.png}
+          \
+          EWSB and physics beyond SM: from 100 GeV to TeV scale
+        \end{column}
+      \end{columns}  
+    }
+
+    \uncover<3>{
+      \vspace{0.1cm}
+      \centering
+      What tools do we have to reach this energy scale?
+    }
+
+    %\vspace{-0.15cm}
+    %\begin{columns}[c]
+    %  \begin{column}{5cm}
+    %    \centering
+    %    \uncover<2->{\includegraphics[width = 5cm]{Pictures/instrument.png}
+    %    \footnotesize{
+    %    EWSB and physics beyond SM: from 100 GeV to TeV scale
+    %    }}
+    %    
+    %  \end{column}
+    %  
+    %  \begin{column}{5cm}
+    %    \uncover<3->{\begin{block}{LHC: a discovery machine}
+    %      \begin{itemize}
+    %        \item Centre-of-mass energy $\sqrt{s} = 14~\text{TeV}$
+    %        \item Collision with composites particles (protons or Pb)
+    %            \begin{itemize}
+    %                \item Unknown momentum distribution of partons
+    %                \item Unknown polarisation of colliding partons
+    %                \item Trigger needed
+    %                \item Background made of complex Standard Model reactions
+    %            \end{itemize}
+    %      \end{itemize}
+    %    \end{block}
+    %    }
+    %  \end{column}
+    %\end{columns}
+
+    %\vspace{0.1cm}
+    %\uncover<3>{\centering{\textbf{$\Rightarrow$ Need complementary experimental program}} }
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Large Hadron Collider (LHC)}
+
+    \uncover<1->{
     \begin{columns}[c]
-      \begin{column}{5cm}
+      \begin{column}{4cm}
         \centering
-        \includegraphics[width = 5cm]{Pictures/instrument.png}
+
+        \includegraphics[width =\textwidth]{Pictures/cern-lhc-aerial.jpg}
       \end{column}
-      
-      \begin{column}{5cm}
+
+      \begin{column}{6cm}
         \begin{block}{LHC: a discovery machine}
           \begin{itemize}
             \item Centre-of-mass energy $\sqrt{s} = 14~\text{TeV}$
@@ -313,32 +378,14 @@
         \end{block}
       \end{column}
     \end{columns}
+    }
 
-    \centering{\textbf{$\Rightarrow$ Need new experimental program}} 
+    \uncover<2>{
+      \vspace{0.3cm}
+      \centering{\textbf{$\Rightarrow$ Need complementary experimental program}}
+    }
+
   \end{frame}
-
-    %\begin{frame}
-    %  \frametitle{Standard Model}
-
-    %  \begin{block}{Quantum field theory}
-    %    \begin{itemize}
-    %      \item Lagrangian field theory
-    %      \item Particles $\Rightarrow$ matter field
-    %      \item Bosons $\Rightarrow$ gauge field
-    %      \item Symmetries
-    %    \end{itemize}
-    %  \end{block}
-
-    %  \begin{block}{Standard Model}
-    %    \begin{itemize}
-    %      \item Interactions: QED + EW + QCD
-    %      \item Symmetry group: $U(1) \otimes SU(2) \otimes SU(3)$
-    %      \item Spontaneous electroweak symmetry via Higgs mechanism \\ $\Rightarrow$ particles' mass
-    %    \end{itemize}
-    %  \end{block}
-    %\end{frame}
-
-
 
     
     \subsection{ILC and ILD}
@@ -350,9 +397,16 @@
     \frametitle{International Linear Collider}
 
     \vspace{-0.3cm}
-    \begin{center}
-      \includegraphics[width = 9 cm]{Pictures/ILC.png}
-    \end{center}
+    \begin{columns}[c]
+      \begin{column}{3cm}
+        \centering
+        \includegraphics[width = 4 cm]{Pictures/ILC-Candidate-Area2.jpg}
+      \end{column}
+      \begin{column}{8cm}
+        \centering
+        \includegraphics[width = 9 cm]{Pictures/ILC.png}
+      \end{column}
+    \end{columns}
 
     \vspace{-0.3cm}
     \begin{itemize}
@@ -360,7 +414,7 @@
       \item Polarised beam
       \item Luminosity $\simeq 2 \times 10^{34}~\rm{cm}^{-2}\rm{s}^{-1}$
       \item Candidate site: Kitakami in nothern Japan
-      \item To study properties of the Higgs boson, top physics...
+      \item To study properties of the Higgs boson, top physics and discovery potential new physics
     \end{itemize}
   \end{frame}
  
@@ -388,7 +442,7 @@
     \begin{column}{5cm}
       \includegraphics[width = 5cm, height = 2.9 cm]{Pictures/ILD_all_110826.jpg}
       \vspace{-0.25cm}
-      \begin{block}{International Linear Detector}
+      \begin{block}{International Large Detector}
         \footnotesize{
         \begin{itemize}
           \item TPC + silicon envelope \\ (radius = 1.8 m)
@@ -409,8 +463,16 @@
   \end{block}
   
 \end{frame}
+
+\begin{frame}
+  \frametitle{Particle Flow Algorithm}
+
+  \begin{center}
+    \includegraphics[width = 0.5\textwidth]{Pictures/ild_particleFlowConcept.png}
+  \end{center}
+\end{frame}
   
-\section{Higgs boson study}
+\section{Higgs boson study at the ILC}
   \begin{frame}
     \frametitle{Outlines}
     \begin{minipage}{\textwidth}
@@ -424,44 +486,52 @@
     \begin{frame}
       \frametitle{Higgs boson study}
 
-      %\begin{block}{Electroweak Symmetry Breaking}
-      %  \begin{itemize}
-      %    \item Higgs-Brout-Englert mechanism: how particles acquire mass via Higgs field
-      %    \item 2012: Discovery of the Higgs boson (CMS and ATLAS)
-      %  \end{itemize}
-
-      %\end{block}
-      
-      \begin{block}{Measurements @ LHC:}
+      \vspace{-0.3cm}
+      \begin{block}{Measurements @ LHC}
         \begin{itemize}
           \item Higgs boson discovered in 2012 (ATLAS and CMS collaborations)
           \item Mass: $125.7 \pm 0.4$ GeV
           \item Spin: 0
-          \item Only a subset of Higgs decays can be observed (with uncertainties of $5~\%$)
+          %\item Only a subset of Higgs couplings can be observed (with uncertainties of $5~\%$)
         \end{itemize}
       \end{block}
+          
+      \vspace{-0.1cm}
+      \begin{columns}[c] 
 
-      \begin{alertblock}{Missing measurements}
-        \begin{itemize}
-          \item Couplings of Higgs boson to $c$-quarks and gluons
-          \item Higgs self-coupling
-          \item Precision recquired $\sim 1~\%$
-        \end{itemize}
-      \end{alertblock}
+        \begin{column}{5cm}
+          \centering
+          \includegraphics[width = 4cm]{Pictures/Chapter_Theory_figs_mass-coupling1TeV.png}
+        \end{column}
+        \begin{column}{5cm}
+          \centering
+          \begin{alertblock}{Missing measurements}
+            \begin{itemize}
+              \item Couplings of Higgs boson to $c$-quarks and gluons
+              \item Higgs self-coupling 
+            \end{itemize}
+            \centering
+            $\Rightarrow$ Is the boson discover compatible with the Higgs boson defined in the SM?
+          \end{alertblock}
+        \end{column}
+
+      \end{columns}
+
     \end{frame}
 
     \begin{frame}
-    \frametitle{Higgs boson study}
+    \frametitle{Higgs boson study at the ILC}
 
     \vspace{-0.3cm}
     \begin{columns}[c]
       \begin{column}{5cm}
         \begin{center}
-          \includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
+          \includegraphics[width = 5cm]{Pictures/Figures_HiggsCoupling500LHC.png}
+          %\includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
         \end{center}
       \end{column}
       \begin{column}{5cm}
-        \begin{block}{At LHC}
+        \begin{block}{At the LHC}
           \footnotesize
           \begin{itemize}
             \item Higgs boson to quarks difficult to observe
@@ -470,7 +540,7 @@
           \end{itemize}
         \end{block}
         \vspace{-0.3cm}
-        \begin{block}{At ILC}
+        \begin{block}{At the ILC}
           \footnotesize
           \begin{itemize}
             \item $H \rightarrow b\overline{b}, c\overline{c}, WW^{*}, \tau\tau$ and $gg$ able to be separately identified with high efficiency 
@@ -575,14 +645,14 @@
 \begin{frame}
   \frametitle{Reconstruction of the H$\nu\nu$ channel}
 
-  \begin{block}{Final state signature:}
+  \begin{block}{Final state signature}
     \begin{itemize}
       \item 2 jets coming from the Higgs boson decay
       \item Missing energy
     \end{itemize}
   \end{block}
 
-  \begin{block}{Events selection:}
+  \begin{block}{Events selection}
     \begin{enumerate}
       \item Reject events with isolated leptons
       \item Remove $\gamma\gamma$ overlay interactions 
@@ -658,41 +728,41 @@
   %\grille
 \end{frame}
 
-\begin{frame}
-  \frametitle{Distribution of each processes}
-
-  \begin{center}
-    \footnotesize{
-      \begin{tabular}{c c}
-        \hline
-         Process        &  Expected events   \tabularnewline
-        \hline
-        \hline
-        $Z$ hadronic decay            & $1.3 \cdot 10^{7}$ \tabularnewline
-        $WW$ hadronic decay           & $2.2 \cdot 10^{6}$ \tabularnewline
-        $WW$ semi-leptonic decay      & $3.7 \cdot 10^{6}$ \tabularnewline
-        $ZZ$ hadronic decay           & $2.0 \cdot 10^{5}$ \tabularnewline
-        $ZZ$ semi-leptonic decay      & $1.9 \cdot 10^{5}$ \tabularnewline
-        $W$ semi-leptonic decay       & $5.4 \cdot 10^{5}$ \tabularnewline
-        $Zee$ semi-leptonic decay     & $1.0 \cdot 10^{5}$ \tabularnewline
-        $Z\nu\nu$ semi-leptonic decay & $1.2 \cdot 10^{5}$ \tabularnewline
-        Higgs BG                      & $5.3 \cdot 10^{4}$ \tabularnewline
-        Other Higgs boson decay       & $1.0 \cdot 10^{4}$ \tabularnewline
-        \hline
-        Background                    & $1.9 \cdot 10^{7}$ \tabularnewline
-        Signal                        & $2.2 \cdot 10^{4}$ \tabularnewline
-        \hline
-      \end{tabular}
-    }   
-  \end{center}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Distribution of each processes}
+%
+%  \begin{center}
+%    \footnotesize{
+%      \begin{tabular}{c c}
+%        \hline
+%         Process        &  Expected events   \tabularnewline
+%        \hline
+%        \hline
+%        $Z$ hadronic decay            & $1.3 \cdot 10^{7}$ \tabularnewline
+%        $WW$ hadronic decay           & $2.2 \cdot 10^{6}$ \tabularnewline
+%        $WW$ semi-leptonic decay      & $3.7 \cdot 10^{6}$ \tabularnewline
+%        $ZZ$ hadronic decay           & $2.0 \cdot 10^{5}$ \tabularnewline
+%        $ZZ$ semi-leptonic decay      & $1.9 \cdot 10^{5}$ \tabularnewline
+%        $W$ semi-leptonic decay       & $5.4 \cdot 10^{5}$ \tabularnewline
+%        $Zee$ semi-leptonic decay     & $1.0 \cdot 10^{5}$ \tabularnewline
+%        $Z\nu\nu$ semi-leptonic decay & $1.2 \cdot 10^{5}$ \tabularnewline
+%        Higgs BG                      & $5.3 \cdot 10^{4}$ \tabularnewline
+%        Other Higgs boson decay       & $1.0 \cdot 10^{4}$ \tabularnewline
+%        \hline
+%        Background                    & $1.9 \cdot 10^{7}$ \tabularnewline
+%        Signal                        & $2.2 \cdot 10^{4}$ \tabularnewline
+%        \hline
+%      \end{tabular}
+%    }   
+%  \end{center}
+%\end{frame}
 
   \subsection{Reduction of the background}
 \begin{frame}
   \frametitle{Reducing the background}
     
   \vspace{-0.25cm}
-  \begin{block}{Find optimized cuts:}
+  \begin{block}{Find optimized cuts}
       \begin{itemize}
           \item For each cut, try to find the one which reduces the signal the least
               \[significance = \frac{signal}{\sqrt{signal + background}}\]
@@ -701,12 +771,12 @@
   \end{block}
 
   \vspace{-0.2cm}
-  \begin{exampleblock}{\hyperlink{cuts}{Sequential cuts strategy:}}
+  \begin{exampleblock}{\hyperlink{cuts}{Sequential cuts strategy}}
       \begin{enumerate}
           \item [cut0] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
           \item [cut1] Transverse Momentum visible ($\rm{P_{t}^{vis}}$): 35 < $\rm{P_{t}^{vis}}$ < 155 GeV
           \item [cut2] Visible mass ($\rm{m_{vis}}$): 95 < $\rm{m_{vis}}$ < 140 GeV
-          \item [cut3] Angle between the momentum axis of both jets ($\cos{\alpha}$): -1 < $\cos{\alpha}$ < 0.22
+          \item [cut3] Angle between the momentum axis of both jets ($\cos{\alpha}$):\\ -1 < $\cos{\alpha}$ < 0.22
           \vspace{-0.1cm}
           \item [...]
       \end{enumerate}
@@ -717,7 +787,7 @@
 \begin{frame}
     \frametitle{Reduction table after applying cuts}
 
-    \hspace{-0.7cm}
+    %\hspace{-0.7cm}
     \centering 
     \footnotesize{ 
                 \begin{tabular}{c c c c}
@@ -739,13 +809,16 @@
       \hline %----------------------------
     \end{tabular}
    }
+   \vspace{-0.15cm}
    \begin{block}{Outlook}
      \begin{itemize}
+       \item Relative uncertainty on branching ratio is impacted by significance to measure signal
        \item Higher significance is needed to study Higgs decay (TMVA solution)
        \item Focus on Higgs boson decay mode, especially $H \rightarrow c \overline{c}$ 
      \end{itemize}
+     \vspace{-0.2cm}
      \centering
-     $\Rightarrow$ determine vertex detector geometry  
+     $\Rightarrow$ determine vertex detector geometry for $c$-tagging ability 
    \end{block}
 \end{frame}
 
@@ -753,13 +826,13 @@
 %                           PLUME Project
 %-------------------------------
 
-\section{Detector development}
+\section{Double-sided layers development}
 \begin{frame}
-    \frametitle{Outlines}
-    \begin{minipage}{\textwidth}
-      \tableofcontents[currentsection,hideothersubsections, 
-      sectionstyle=show/shaded,]
-    \end{minipage}
+  \frametitle{Outlines}
+  \begin{minipage}{\textwidth}
+    \tableofcontents[currentsection,hideothersubsections, 
+    sectionstyle=show/shaded]
+  \end{minipage}
 \end{frame}
 
   \subsection{ILD vertex detector}
@@ -768,31 +841,19 @@
 
     \vspace{-0.3cm}
     \begin{block}{Vertex detector}
-      \vspace{-0.2cm}
+
       \begin{columns}[c]
         \begin{column}{5cm}
           \begin{center}
-            \includegraphics[width = 0.5\textwidth]{Pictures/ild_vxd_3layers.jpg}
+            \includegraphics[width = \textwidth]{Pictures/ImpactParameter.png}
           \end{center}
         \end{column}
         \begin{column}{5cm}
-          \begin{center}
-            \includegraphics[width = 0.8\textwidth]{Pictures/schematicFlavourVertices.png}
-          \end{center}
+          \centering
+          \includegraphics[width = 0.9\textwidth]{Pictures/IPresolution_variousColliders.png}
         \end{column}
       \end{columns}
     \end{block}
-
-    \vspace{-0.22cm}
-    \begin{alertblock}{Impact parameter resolution}
-      \begin{itemize}
-        \item $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{3/2} \theta}$
-        \item Hit resolution: $a \simeq 5 \mu m \Rightarrow ~ \sigma_{spatial} < 3 \mu m$
-        \item Multiple scattering: $b \simeq 10 - 15 \mu m \Rightarrow$ material budget per layer $\simeq 0.15~\%$ X$_0$ 
-      \end{itemize}
-    \end{alertblock}
-
-
 
 \end{frame}
 
@@ -802,14 +863,48 @@
 %-------------------------------
 
 \begin{frame}
-  \frametitle{Main aims}
+  \frametitle{ILD vertex detector}
 
-  \begin{itemize}
-    \item \only<1>{Constraint material budget $\Rightarrow$ $< 0.3~\%$ X$_0$} \only<2>{\textbf{Constraint material budget} $\Rightarrow$ $< 0.3~\%$ X$_0$}
-    \item \only<1>{Study impact of the mechanical structure on sensor performance} \only<2>{\textbf{Study impact of the mechanical structure on sensor performance}}
-    \item Study the added value of double-sided measurement (\hyperlink{miniVec}{mini vectors})
-  \end{itemize}
+  \vspace{-0.3cm}
+  \begin{alertblock}{Impact parameter resolution}
+      \centering{ $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{2/2} \theta}$}
+    \begin{itemize}
+      \item Hit resolution: $a \simeq 4~\mu m \Rightarrow ~ \sigma_{spatial} < 3~\mu m$
+      \item Multiple scattering: $b \simeq 9 - 15~\mu m \Rightarrow$ material budget per measurement point $\simeq 0.15~\%$ X$_0$ 
+    \end{itemize}
+  \end{alertblock}
+
+  \vspace{-0.2cm}
+  \begin{block}{Double-sided layer concept}
+    \begin{columns}[c]
+      \begin{column}{3cm}
+        \vspace*{-0.1cm}
+        \centering
+        \includegraphics[width = 3cm]{Pictures/ild_vxd_3layers.jpg}
+      \end{column}
+      \begin{column}{7cm}
+        %\vspace{-4cm}
+        \centering
+        \begin{itemize}
+          \item 1 mechanical structure for \\ 2 measurement points
+          \item Alignment
+          \item Possibility to use 2 different technologies
+        \end{itemize}
+      \end{column}
+    \end{columns}
+  \end{block}
+
 \end{frame}
+
+%\begin{frame}
+%  \frametitle{Main aims}
+%
+%  \begin{itemize}
+%    \item \only<1>{Constraint material budget $\Rightarrow$ $< 0.3~\%$ X$_0$} \only<2>{\textbf{Constraint material budget} $\Rightarrow$ $< 0.3~\%$ X$_0$}
+%    \item \only<1>{Study impact of the mechanical structure on sensor performance} \only<2>{\textbf{Study impact of the mechanical structure on sensor performance}}
+%    \item Study the added value of double-sided measurement (\hyperlink{miniVec}{mini vectors})
+%  \end{itemize}
+%\end{frame}
 
 
 
@@ -842,27 +937,27 @@
   \end{columns}
 
   \vspace{-0.15cm}
-  %\begin{block}{Concepit}
-  %    \begin{itemize}
-  %        \item Double-sided ladder with an active area of 1x12cm$^2$;
-  %        \item On each side: six MIMOSA-26 CMOS sensors thinned to 50 $\mu$m;
-  %        \item Kapton-metal flex cable;
-  %        \item 2 mm of Silicon carbide foam as mechanical support between two modules and spacer.
-  %    \end{itemize}
-  %\end{block}
 
   \begin{block}{Motivation}
-    ILD Vertex detector at ILC
+    To build double-sided ladder with a geometry adapted for the ILD vertex detector at the ILC
   \end{block}
 
-  \vspace{-0.18cm}
-  \begin{block}{Design}
+  \begin{block}{Goals}
     \begin{itemize}
-      \item Double-sided ladder with an active area of 1x12cm$^2$
-      \item On each side: six MIMOSA-26 CMOS sensors thinned down to $\sim 50~\mu$m on a kapton-metal flex cable
-      \item 2 mm of silicon carbide foam as mechanical support and spacer between two modules
+      \item Reach a constraint material budget < $0.3~\%$ X$_0$
+      \item Study the added values of double-sided measurement
+      \item Study the mechanical structure and its impact on sensors' performance
     \end{itemize}
   \end{block}
+
+  %\vspace{-0.18cm}
+  %\begin{block}{Design}
+  %  \begin{itemize}
+  %    \item Double-sided ladder with an active area of 1x12cm$^2$
+  %    \item On each side: six MIMOSA-26 CMOS sensors thinned down to $\sim 50~\mu$m on a kapton-metal flex cable
+  %    \item 2 mm of silicon carbide foam as mechanical support and spacer between two modules
+  %  \end{itemize}
+  %\end{block}
 \end{frame}
 
 \subsection{Design}
@@ -894,40 +989,26 @@
 %-------------------------------
 
 \begin{frame}
-  \frametitle{Silicon-Carbide foam support structure}
+  \frametitle{PLUME in real}
 
-  \vspace{-0.6cm}
-  \begin{columns}[t]
-
-    \begin{column}{4cm}
-      \begin{center}
-        \includegraphics[width = 4cm]{Pictures/foam1.png}
-      \end{center}
+  \begin{center}
+    \includegraphics[width = \textwidth]{Pictures/plume2.jpg}
+  \end{center}
+  
+  \begin{columns}{t}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width = \textwidth]{Pictures/SiC.png}
     \end{column}
-
-    \begin{column}{4cm}
-      \begin{center}
-        \includegraphics[width = 4cm]{Pictures/foam2.png}
-      \end{center}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item $2~\text{mm}$ SiC foam
+        \item $50~\mu\text{m}$ CMOS pixel sensor
+        \item $100~\mu\text{m}$ flex-cable
+        \item Air-flow cooling system
+      \end{itemize}
     \end{column}
-
-    \begin{column}{4cm}
-      \vspace{-0.2cm}
-      \begin{center}
-        \begin{block}{Properties}
-          \begin{itemize}
-            \item Open-cell foam
-            \item Macroscopically uniform
-            \item No tensioning needed
-            \item Density: 4 to 8~\% \\ (2-3~\% possible)
-            \item Low thermal and electrical conductivity \\ (50 W/m/K)
-          \end{itemize}
-        \end{block}
-      \end{center}
-    \end{column}
-
   \end{columns}
-
 \end{frame}
 
 %-------------------------------
@@ -947,8 +1028,9 @@
     \end{column}
 
     \begin{column}{4cm}
+      \vspace{-0.3cm}
       \begin{center}
-        \includegraphics[width = 4.0cm]{Pictures/MIMOSA26_chip26_HR15_20deg.png}
+        \includegraphics[width = 4.5cm]{Pictures/MIMOSA26_chip26_HR15_20deg.png}
 
         % \tiny{From IPHC - Strasbourg}
       \end{center}
@@ -965,15 +1047,17 @@
     \end{column}
   \end{columns}
 
+  \vspace{-0.2cm}
   \begin{block}{Monolithic Active Pixels Sensor (MAPS)}
     \scriptsize{
     \begin{itemize}
+      \item Well known sensors $\Rightarrow$ used for EUDET telescope
+      \item Extended to MIMOSA-28 exploited in STAR-PXL vertex detector @ RHIC-BNL since 2014
+      \item Thickness: $50~\mu\text{m}$
       \item Pitch: $18.4~\mu\text{m}$ (square pixels)
       \item Active area: $10.6 \times 21.2 \text{mm}^2$ (576 rows x 1152 columns)
       \item Integration time: $115.2~\mu\text(s)$ ($200~\text{ns}$ per line)
       \item Binary output with \hyperlink{suze}{Zero suppression}
-      \item Well known sensors $\Rightarrow$ used for EUDET telescope
-      \item Extended to MIMOSA-28 exploited in STAR-PXL vertex detector @ RHIC-BNL since 2014
     \end{itemize}
    }
   \end{block}
@@ -1012,27 +1096,17 @@
 \begin{frame}
     \frametitle{Track-hit residual}
 
-    \begin{columns}[t]
+    \begin{columns}[c]
+    \hspace{-0.8cm}
       \begin{column}{7cm}
-        \begin{center}
+        \begin{flushleft}
           \includegraphics[width = 7cm]{Pictures/residual_explanation.png}
-        \end{center}
+        \end{flushleft}
       \end{column}
+    \hspace{-0.8cm}
       \begin{column}{4cm}
-        \scriptsize{
-        \begin{block}{Device Under Test (DUT) alignment:}
-          \begin{itemize}
-            \item Telescope planes defined particle's track
-            \item Alignment of DUT in local coordinate system:
-              \begin{itemize}
-                \scriptsize{
-                \item Define a maximal range in which a hit can be associated to a track
-                \item Find the best tilt and position to minimise the distance between a hit and its associated track.
-                }
-              \end{itemize}
-          \end{itemize}
-        \end{block}
-      }
+        \centering
+        \includegraphics[width = 1.2\textwidth ]{Pictures/deltaU_6_normal_incidence.pdf}
       \end{column}
     \end{columns}
 \end{frame}
@@ -1175,6 +1249,14 @@
 \begin{frame}
   \frametitle{Module perpendicular to the beam}
 
+  \begin{center}
+    \includegraphics[width = 0.7\textwidth, height = 5cm]{Pictures/tb_cern_11_sketch_normal.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Module perpendicular to the beam}
+
   \vspace{-0.2cm}
   \centering{Threshold 6 $\sigma$, air flow speed < 5m/s and 1.8M events.}
 
@@ -1211,7 +1293,14 @@
 %                           RUN Tilt of 36 degres
 %-------------------------------
 \begin{frame}
-  \frametitle{Module titled in one direction (w.r.t. to the beam axis)}
+  \frametitle{Module tilted in one direction (36\degres)}
+
+  \begin{center}
+    \includegraphics[width = 0.6\textwidth]{Pictures/tb_cern_11_sketch_tilted.pdf}
+  \end{center}
+\end{frame}
+\begin{frame}
+  \frametitle{Module tilted in one direction (w.r.t. to the beam axis)}
 
   \vspace{-0.2cm}
   \centering{Threshold 6 $\sigma$, air flow speed <  5m/s, 720k events and 36\degres tilt.}
@@ -1344,7 +1433,7 @@
   %                           Parametrization of the deformation
   %-------------------------------
   \begin{frame}
-    \frametitle{Deformation's parametrisation}
+    \frametitle{Deformation's parametrisation for 36\degres}
 
     \centering{Possibility to parametrise the deformation with Legendre polynomials of the $11^{th}$ order .} 
 
@@ -1352,48 +1441,21 @@
       \includegraphics[width = 0.8\textwidth]{Pictures/profileFitted_pl8.png}
     \end{center}
 
+    \vspace{-0.8cm}
+    \[ \delta W \ = \ \frac{\delta U}{\tan \theta}\]
     %\grille
 
     \begin{tikzpicture}[overlay,remember picture, red, shift={(current page.south west)}]
       \begin{scope}
-        \draw[line width = 2pt,-latex] (8.1,3.85) ellipse (1.2cm and 1.0cm);
+        \draw[line width = 2pt,-latex] (8.1,4.05) ellipse (1.2cm and 1.0cm);
       \end{scope}
     \end{tikzpicture}
 
   \end{frame}
 
   \subsection{Results on the correction of deviations}
-  %\begin{frame}
-  %  \frametitle{Correction of the deviations between real hits and extrapolated ones}
-  %
-  %  \vspace{-0.35cm}
-  %  \begin{center}
-  %    \begin{columns}[t]
-  %      \begin{column}{4cm}
-  %        \centering
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUV_8_corrected1.png}
-  %        \
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUU_8_corrected1.png}
-  %      \end{column}
-  %      \begin{column}{4cm}
-  %        \centering
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaVU_8_corrected1.png}
-  %        \
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaU_8_corrected1.png}
-  %      \end{column}
-  %    \end{columns}
-  %    %\includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6_corrected.png}
-  %  \end{center}
-  %
-  %  \vspace{-0.35cm}
-  %  \centering{Spatial residual obtained after correction: }
-  %
-  %  \vspace{-0.15cm}
-  %  \centering{$\sigma_U \simeq 5.9~\mu\text{m}$ instead of $ \sigma_U \simeq 6.1~\mu\text{m}$}
-  %\end{frame}
-
   \begin{frame}
-    \frametitle{Summary before/after correction}
+    \frametitle{Summary before/after correction at 36\degres}
 
     \vspace{-0.35cm}
     \begin{columns}[c]
@@ -1454,7 +1516,7 @@
 
   \end{frame}
 
-\section{Radiation length measurement}
+\section{Material budget measurement}
 \begin{frame}
   \frametitle{Outlines}
   \begin{minipage}{\textwidth}
@@ -1470,7 +1532,7 @@
     \frametitle{Multiple scattering}
     
     \vspace{-0.4cm} 
-    \begin{block}{Charged particles traveling through matter:}
+    \begin{block}{Charged particles traveling through matter}
       \vspace{-0.3cm}
       \begin{columns}[c]
         \begin{column}{5cm}
@@ -1480,6 +1542,7 @@
             \item Deflection by many small angles (Coulomb scattering from nuclei)
             \item Standard deviation of the scattering angle distribution described by Highland formula
           \end{itemize}
+          \vspace{-0.1cm}
           \centering
             \[ \theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
         \end{column}
@@ -1490,12 +1553,13 @@
       \end{columns}
     \end{block}
 
-    \vspace{-0.2cm}
-    \begin{block}{Motivation of measuring the radiation length:}
+    \vspace{-0.3cm}
+    \begin{block}{Motivation of measuring the material budget}
       \footnotesize
       \begin{itemize}
-        \item Tracking system has to detect particle's path and minimise its energy degradation
-        \item Physics analysis: reconstruction of events depends strongly on the energy loss inside the different part of detectors
+        \item Key parameter for tracking algorithm: has to take into account multiple scattering and energy degradation
+        \item Compare material budget prediction to its result after construction
+        \item Goal: mapping in $uv$ of X$_0$
       \end{itemize}
     \end{block}
   \end{frame} 
@@ -1515,7 +1579,7 @@
         \begin{itemize}
           \item Test Beam 21
           \item Reference plane: 4 EUDET telescope planes
-          \item Goal: radiation length measurement
+          \item Goal: material budget measurement
         \end{itemize}
       \end{column}
     \end{columns}
@@ -1523,19 +1587,66 @@
 
   \subsection{Theoretical estimation}
   
+ 
   \begin{frame}
+    \frametitle{Kink angle measurement}
+
+    \begin{center}
+      \includegraphics[width = 0.7\textwidth]{Pictures/kinkAngleTB.png}
+    \end{center}
+  \end{frame}
+
+  \subsection{Results}
+
+  \begin{frame}
+    \frametitle{Kink angle measurement at 4 GeV}
+
+      \begin{center}
+        \includegraphics[width = 0.7\textwidth]{Pictures/kinkAngle4GeV.png}
+      \end{center}
+      \vspace{-0.2cm}
+      \begin{block}{Determination of projected scattering angle $\theta_0$}
+        \centering{$\theta_0 = \sqrt{sigma^2 - F}$}
+        \begin{itemize}
+          \item $sigma$ = sigma of the kink angle distribution fit
+          \item $F$ = Offset parameter from the GBL track fitting algorithm
+        \end{itemize}
+      \end{block}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Material budget}
+
+    \vspace{-0.3cm}
+    \begin{center}
+      \includegraphics[width = 0.8\textwidth]{Pictures/theta0VsP_2-4GeV.png}
+    \end{center}
+
+    \vspace{-0.4cm}
+    \begin{block}{Measurement}
+      \begin{center}
+      Highland formula: $\theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}$
+      \ 
+       $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$
+      \end{center}
+    \end{block}
+
+  \end{frame}
+
+   \begin{frame}
     \frametitle{Estimation of the radiation length}
 
     \begin{columns}[c]
-      \begin{column}{5cm}
+      \begin{column}{4cm}
         \centering
-        \includegraphics[width = \textwidth]{Pictures/X0.pdf}
+        \includegraphics[width = 0.9\textwidth]{Pictures/X0.pdf}
         
       \end{column}
       \begin{column}{5cm}
         \centering
+        \includegraphics[width = 1.1\textwidth]{Pictures/flexPCB-2009.jpg}
 
-        \includegraphics[width = \textwidth]{Pictures/X02.pdf}
+        %\includegraphics[width = \textwidth]{Pictures/X02.pdf}
         %\begin{block}{Beam passes through}
         %  %\begin{itemize}
         %  %  \item $2 \times$ Mi-26 (thinned down to $\sim 50~\mu$m): $0.053~\%$ X$_0$
@@ -1553,76 +1664,11 @@
       \centering 
       Depends on flex-cable fill factor (25~\% or 30~\%)
       $\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
+      \\
+      \only<2>{$\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$}
     \end{block}
   \end{frame}
 
-  \begin{frame}
-    \frametitle{Kink angle measurement}
-
-    \begin{center}
-      \includegraphics[width = 0.8\textwidth]{Pictures/kinkAngle.png}
-    \end{center}
-  \end{frame}
-
-  \subsection{Results}
-
-  \begin{frame}
-    \frametitle{Kink angle measurement at 4 GeV}
-
-      \begin{center}
-        \includegraphics[width = 0.7\textwidth]{Pictures/kinkAngle4GeV.png}
-      \end{center}
-      \vspace{-0.2cm}
-      \begin{block}{Determination of projected scattering angle $\theta_0$}
-        \centering{$\theta_0 = \sqrt{k^2 - F}$}
-        \begin{itemize}
-          \item $k$ = width of the kink angle distribution fit
-          \item $F$ = Offset parameter from the GBL track fitting algorithm
-        \end{itemize}
-      \end{block}
-  \end{frame}
-
-  \begin{frame}
-    \frametitle{Kink angle measurement between 1 and 4 GeV}
-
-    \begin{block}{Fitted kink angle distributions}
-      \begin{columns}[c]
-        \begin{column}{5cm}
-          \centering
-          \includegraphics[width = \textwidth]{Pictures/kinkAngle1GeV.png}
-          \
-          \includegraphics[width = \textwidth]{Pictures/kinkAngle2GeV.png} 
-        \end{column} 
-        \begin{column}{5cm}
-          \centering
-          \includegraphics[width = \textwidth]{Pictures/kinkAngle3GeV.png}
-          \ 
-          \includegraphics[width = \textwidth]{Pictures/kinkAngle4GeV.png}
-        \end{column} 
-      \end{columns}
-    \end{block}
-  \end{frame}
-
-  \begin{frame}
-    \frametitle{Material budget}
-
-    \vspace{-0.3cm}
-    \begin{center}
-      \includegraphics[width = 0.8\textwidth]{Pictures/theta0VsP_2-4GeV.png}
-    \end{center}
-
-    \vspace{-0.4cm}
-    \begin{block}{Measurement}
-      \begin{center}
-      Highland formula: $\theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}$
-       
-       $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
-
-       $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$
-      \end{center}
-    \end{block}
-
-  \end{frame}
 
   \begin{frame}
     \frametitle{Lower estimation of X$_0$}
@@ -1630,11 +1676,11 @@
     \begin{columns}[c]
       \begin{column}{5cm}
         \begin{center}
-          \includegraphics[width = 0.9\textwidth]{Pictures/principeMapsMIP.jpg}
+          \includegraphics[width = 1.2\textwidth]{Pictures/SignalReconstructionMi26.png}
         \end{center}
       \end{column}
       
-      \begin{column}{5cm}
+      \begin{column}{4.5cm}
         \begin{block}{Possible explanation}
           \begin{itemize}
             \item During analysis, hit position is located in middle of the epitaxial layer
@@ -1649,57 +1695,97 @@
 
     
 \section{Conclusion and outlook} 
+\begin{frame}
+  \frametitle{Outlines}
+  \begin{minipage}{\textwidth}
+  \footnotesize
+    \tableofcontents[currentsection,hideothersubsections, 
+    sectionstyle=show/shaded]
+  \end{minipage}
+\end{frame}
 
 \begin{frame}
-  \frametitle{Conclusion}
+  \frametitle{Conclusion 1/2}
 
-  \begin{block}{Context:}
+  \begin{block}{Context}
     \begin{itemize}
-      \item ILC: next collider to study precisely EWSB (and other physics scenarios)
-      \item Performances to achieve imposes R\&D detector development
+      \item The ILC is the next colliding machine to study precisely EWSB (and other physics scenarios)
+      \item The Higgs boson will be more precisely characterised
+      \item Physics performance to achieve requires a new R\&D detector development 
     \end{itemize}
   \end{block}
 
-  \begin{block}{blabla}
-    \begin{itemize}
-      \item Mechanical deformations observed are impacting ladder's performance
-      \item Algorithm based on Legendre polynomials reduces impact of these deformations during the analysis
-      \item Radiation length measurement: 
-      \begin{center}
-        $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
-
-        $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$
-      \end{center}
-    \end{itemize}
+  \begin{block}{Higgs boson study}
+    To achieve a precision of $\sim 1~\%$ in the Higgs boson branching ratio measurement a simple sequential cuts is not the best option
   \end{block}
 
-  %\begin{itemize}
-  %  \item Mechanical deformations are impacting the spatial resolution
-  %  \item An offline algorithm reduces this impact
-  %  \item Radiation length measured confirms the theoretical estimation $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
-
-  %     $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$  
-  %\end{itemize}
+  \vspace{-0.23cm}
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{Outlook}
+  \frametitle{Conclusion 2/2}
 
-  \footnotesize
-  \begin{itemize}
-    \item Study ladder performance for low energy (test beam April 2016)
-    \item New prototype with a material budget of $0.35~\%$ X$_0$ has been built, tested in laboratory but not yet in real conditions
-    \item Double-sided ladders could be enriched with sensors having different characteristics (fast integration time VS good spatial resolution)
-    \item Using the beam structure to apply a power-pulsing method
-    \item Application of PLUME in SuperKEKB for the BEAST project
-  \end{itemize}
+    \begin{block}{PLUME development}
+    PLUME is the first double-sided layers developed according to the ILD requirements
+    \begin{itemize}
+      \item Impact of the mechanical structure
+      \begin{itemize}
+        \item Mechanical structure induces permanent deformations which have an impact on ladder's performance
+        \item Algorithm based on Legendre polynomials is able to reduce the impact of these deformations on ladder's performance
+      \end{itemize}
+      \item Material budget
+      \begin{itemize}
+        \item Material budget is predicted from construction
+        \item Measurement of this material budget for PLUME-1 gives:
+      \end{itemize}
+    \end{itemize}
+    \begin{center}
+      $\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$
 
-  \vspace{-0.2cm}
-  \begin{center}
-    \includegraphics[width = 0.5\textwidth]{Pictures/plumeInTableDesySetup.jpg}
-  \end{center}
+      $\frac{\text{x}}{\text{X}_0}\left|_{estimated} \simeq 0.498~-~0.515~\%~\text{X}_0 \right.$
+     \end{center}
+  \end{block}
+\end{frame}
 
+\begin{frame}
+  \frametitle{Outlook 1/2}
+
+  \vspace{-0.25cm}
+  \begin{block}{Test beam 2016}
+    \begin{itemize}
+      \item Mapping in $uv$ of X$_0$
+      \item Study ladder performance at low energy
+    \end{itemize}
+  \end{block}
+
+  \vspace{-0.15cm}
+  \begin{block}{PLUME-2}
+    New prototype with a material budget of $0.35~\%$ X$_0$ has been built and tested in the laboratory but not yet in real conditions
+  \end{block}
+
+  \vspace{-0.15cm}
+  \begin{block}{Next PLUME ladder}
+    \begin{itemize}
+      \item Higher constraint on material budget ($0.3~\%$ X$_0$)
+      \item Enriching double-sided layer concept with sensors having different characteristics (fast integration time VS good spatial resolution)
+      \item Adapt sensor technology and cooling system to the \hyperlink{power-pulsing}{ILC beam structure}
+    \end{itemize}
+  \end{block}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outlook 2/2}
+
+    \begin{block}{BEAST project}
+    PLUME-2 will be used in the BEAST project at SuperKEKB
+    \vspace{-0.2cm}
+    \begin{center}
+      \includegraphics[width = 0.7\textwidth]{Pictures/plumeInTableDesySetup.jpg}
+    \end{center}
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -1746,6 +1832,14 @@
     \end{itemize}
   \end{frame}
 
+  \begin{frame}[plain]
+    \frametitle{Higgs branching ratio}
+
+    \begin{center}
+      \includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
+    \end{center}
+  \end{frame}
+
 %-------------------------------
 %   BACK-UP: Ladder assembly
 %-------------------------------
@@ -1781,6 +1875,46 @@
       \end{column}
     \end{columns}
   \end{frame}
+
+%-------------------------------
+%   BACK-UP: FOAM
+%-------------------------------
+\begin{frame}[plain]
+  \frametitle{Silicon-Carbide foam support structure}
+
+  \vspace{-0.6cm}
+  \begin{columns}[t]
+
+    \begin{column}{4cm}
+      \begin{center}
+        \includegraphics[width = 4cm]{Pictures/foam1.png}
+      \end{center}
+    \end{column}
+
+    \begin{column}{4cm}
+      \begin{center}
+        \includegraphics[width = 4cm]{Pictures/foam2.png}
+      \end{center}
+    \end{column}
+
+    \begin{column}{4cm}
+      \vspace{-0.2cm}
+      \begin{center}
+        \begin{block}{Properties}
+          \begin{itemize}
+            \item Open-cell foam
+            \item Macroscopically uniform
+            \item No tensioning needed
+            \item Density: 4 to 8~\% \\ (2-3~\% possible)
+            \item Low thermal and electrical conductivity \\ (50 W/m/K)
+          \end{itemize}
+        \end{block}
+      \end{center}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
 
 %-------------------------------
 %   BACK-UP: Mi26
@@ -1915,6 +2049,60 @@
     \end{scope}
   \end{tikzpicture}
 \end{frame}
+
+
+  %\begin{frame}
+  %  \frametitle{Correction of the deviations between real hits and extrapolated ones}
+  %
+  %  \vspace{-0.35cm}
+  %  \begin{center}
+  %    \begin{columns}[t]
+  %      \begin{column}{4cm}
+  %        \centering
+  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUV_8_corrected1.png}
+  %        \
+  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUU_8_corrected1.png}
+  %      \end{column}
+  %      \begin{column}{4cm}
+  %        \centering
+  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaVU_8_corrected1.png}
+  %        \
+  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaU_8_corrected1.png}
+  %      \end{column}
+  %    \end{columns}
+  %    %\includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6_corrected.png}
+  %  \end{center}
+  %
+  %  \vspace{-0.35cm}
+  %  \centering{Spatial residual obtained after correction: }
+  %
+  %  \vspace{-0.15cm}
+  %  \centering{$\sigma_U \simeq 5.9~\mu\text{m}$ instead of $ \sigma_U \simeq 6.1~\mu\text{m}$}
+  %\end{frame}
+
+
+  \begin{frame}
+    \frametitle{Kink angle measurement between 1 and 4 GeV}
+
+    \begin{block}{Fitted kink angle distributions}
+      \begin{columns}[c]
+        \begin{column}{5cm}
+          \centering
+          \includegraphics[width = \textwidth]{Pictures/kinkAngle1GeV.png}
+          \
+          \includegraphics[width = \textwidth]{Pictures/kinkAngle2GeV.png} 
+        \end{column} 
+        \begin{column}{5cm}
+          \centering
+          \includegraphics[width = \textwidth]{Pictures/kinkAngle3GeV.png}
+          \ 
+          \includegraphics[width = \textwidth]{Pictures/kinkAngle4GeV.png}
+        \end{column} 
+      \end{columns}
+    \end{block}
+  \end{frame}
+
+
 
 %-------------------------------
 %   BACK-UP: Physics
