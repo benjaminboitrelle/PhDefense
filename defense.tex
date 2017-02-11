@@ -1807,8 +1807,10 @@
   %\setbeamertemplate{footline}[default]  % vide
 
 %-------------------------------
-%   BACK-UP: HIGGS POTENTIAL
+%   BACK-UP: HIGGS PHYSICS
 %-------------------------------
+%   BACK-UP: HIGGS POTENTIAL
+  
   \begin{frame}[plain]
     \frametitle{Higgs boson potential}
 
@@ -1819,7 +1821,7 @@
 
 %-------------------------------
 %   BACK-UP: HIGGS POTENTIAL
-%-------------------------------
+  
   \begin{frame}[plain]
     \frametitle{Higgs boson physics at the ILC}
 
@@ -1832,6 +1834,9 @@
     \end{itemize}
   \end{frame}
 
+%-------------------------------
+%   BACK-UP: HIGGS Branching ratio
+  
   \begin{frame}[plain]
     \frametitle{Higgs branching ratio}
 
@@ -1841,8 +1846,88 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: Ladder assembly
+%   BACK-UP: Higgs-strahlung
+
+  \begin{frame}[plain]
+    \frametitle{Higgs-strahlung kinematics}
+
+    \[ E_H = \frac{s - \rm{M}_Z^2 + \rm{M}_H^2}{2\sqrt{s}} \]
+    \[ E_Z = \frac{s - \rm{M}_H^2 + \rm{M}_Z^2}{2\sqrt{s}} \]
+    \[ | \overrightarrow{p_H} | = | \overrightarrow{p_Z} | = \frac{\sqrt{\left[ s - (\rm{M}_H + \rm{M}_Z)^2 \right] \cdot \left[s - (\rm{M}_H - \rm{M}_Z)^2 \right]}}{2\sqrt{s}} \]
+
+    If $\rm{M}_H = 125~\rm{GeV}$, $\rm{M}_Z = 91.2~\rm{GeV}$ and $\sqrt{s} = 350~\rm{GeV}$, then:
+    \[ E_H \simeq 185.4~\rm{GeV} \]
+    \[ E_Z \simeq 164.6~\rm{GeV} \]
+    \[  | \overrightarrow{p_H} | = | \overrightarrow{p_Z} | \simeq 68.5~\rm{GeV}\]
+
+  \end{frame}
+
 %-------------------------------
+%   BACK-UP: Higgs production cross-section
+
+  \begin{frame}[plain,label=Xsec]
+    \frametitle{Higgs production cross-section}
+
+    \begin{center}
+      \includegraphics[width = 0.7\textwidth]{Pictures/higgs_xsec_P-8_3.png}
+    \end{center}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: Higgs Cut strategy
+ 
+  \begin{frame}[plain,label=cuts]
+  \frametitle{Sequential cuts strategy}
+      \begin{enumerate}
+          \item [cut0:] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
+          \item [cut1:] Transverse Momentum visible (Ptvis): 35 < $\rm{P_{t}^{vis}}$ < 155 GeV
+          \item [cut2:] Visible mass (mvis): 95 < $\rm{m_{vis}}$ < 140 GeV
+          \item [cut3:] Angle between the momentum axis of both jets ($\cos{\alpha}$): -1 < $\cos{\alpha}$ < 0.22
+          \item [cut4:] Number of reconstructed particle 
+          \item [cut5:] D2YM
+          \item [cut6:] Visible longitudial momentum ($\rm{abs(P_{z}^{vis})}$)
+          \item [cut7:] $\rm{E_{miss}}$
+      \end{enumerate}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: ZH production
+
+  \begin{frame}[plain]
+    \frametitle{ZH production}
+
+    Z boson will decay yo:
+    \begin{itemize}
+        \item Charged leptons $\simeq 10 \%$
+        \item Neutrinos $\simeq 20 \%$
+        \item Hadrons $\simeq 70\%$
+    \end{itemize}
+
+    Hadronic decay channel has large statistics but model dependency and large background
+  \end{frame}
+
+
+
+%-------------------------------
+%   BACK-UP: Higgs beam polarisation
+
+  \begin{frame}[plain]
+    \frametitle{Beam polarisation}
+
+    \begin{block}{Simulated data: $100~\%$ left or right events}
+      \footnotesize{
+      \[ \sigma_{P_{(e^+,e^-)}} = \left( \frac{1-P_{e^-}}{2} \right) \left( \frac{1+P_{e^+}}{2} \right) \sigma_{RL} + \left( \frac{1+P_{e^+}}{2} \right) \left( \frac{1-P_{e^-}}{2} \right) \sigma_{LR} \]
+      \[ \sigma_{P_{(e^+,e^- = 0.3, -0.8)}} = 0.585 \cdot \sigma{RL} + 0.035 \cdot \sigma_{LR} \]
+      }
+    \end{block}
+  \end{frame}
+
+
+%-------------------------------
+%   BACK-UP: PLUME
+%-------------------------------
+%   BACK-UP: PLUME Ladder assembly
+
   \begin{frame}[plain]
     \frametitle{Ladder assembly}
 
@@ -1856,7 +1941,7 @@
 
 %-------------------------------
 %   BACK-UP: PLUME history
-%-------------------------------
+
   \begin{frame}[plain]
     \frametitle{PLUME history}
 
@@ -1877,48 +1962,61 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: FOAM
+%   BACK-UP: PLUME FOAM
+
+  \begin{frame}[plain]
+    \frametitle{Silicon-Carbide foam support structure}
+
+    \vspace{-0.6cm}
+    \begin{columns}[t]
+
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4cm]{Pictures/foam1.png}
+        \end{center}
+      \end{column}
+
+      \begin{column}{4cm}
+        \begin{center}
+          \includegraphics[width = 4cm]{Pictures/foam2.png}
+        \end{center}
+      \end{column}
+
+      \begin{column}{4cm}
+        \vspace{-0.2cm}
+        \begin{center}
+          \begin{block}{Properties}
+            \begin{itemize}
+              \item Open-cell foam
+              \item Macroscopically uniform
+              \item No tensioning needed
+              \item Density: 4 to 8~\% \\ (2-3~\% possible)
+              \item Low thermal and electrical conductivity \\ (50 W/m/K)
+            \end{itemize}
+          \end{block}
+        \end{center}
+      \end{column}
+
+    \end{columns}
+
+  \end{frame}
+
 %-------------------------------
-\begin{frame}[plain]
-  \frametitle{Silicon-Carbide foam support structure}
+%   BACK-UP: PLUME FOAM Young modulus
 
-  \vspace{-0.6cm}
-  \begin{columns}[t]
+  \begin{frame}[plain]
+    \frametitle{Young Modulus}
 
-    \begin{column}{4cm}
-      \begin{center}
-        \includegraphics[width = 4cm]{Pictures/foam1.png}
-      \end{center}
-    \end{column}
+    \begin{center}
+      \includegraphics[width = \textwidth]{Pictures/youngModulus_vs_radiationLength-004.jpg}
+    \end{center}
+  \end{frame}
 
-    \begin{column}{4cm}
-      \begin{center}
-        \includegraphics[width = 4cm]{Pictures/foam2.png}
-      \end{center}
-    \end{column}
-
-    \begin{column}{4cm}
-      \vspace{-0.2cm}
-      \begin{center}
-        \begin{block}{Properties}
-          \begin{itemize}
-            \item Open-cell foam
-            \item Macroscopically uniform
-            \item No tensioning needed
-            \item Density: 4 to 8~\% \\ (2-3~\% possible)
-            \item Low thermal and electrical conductivity \\ (50 W/m/K)
-          \end{itemize}
-        \end{block}
-      \end{center}
-    \end{column}
-
-  \end{columns}
-
-\end{frame}
 
 %-------------------------------
-%   BACK-UP: Mi26
+%   BACK-UP: CMOS
 %-------------------------------
+%   BACK-UP: CMOS Mi26
 
   \begin{frame}[plain]
     \frametitle{MIMOSA-26 description}
@@ -1935,9 +2033,10 @@
       \includegraphics[width = \textwidth]{Pictures/mi26_architecture.pdf}
     \end{center}
   \end{frame}
+
 %-------------------------------
-%   BACK-UP: SUZE
-%-------------------------------
+%   BACK-UP: CMOS SUZE
+
   \begin{frame}[plain, label=suze]
     \frametitle{Zero Suppression logic (SUZE)}
 
@@ -1962,8 +2061,7 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: Column parallel readout
-%-------------------------------
+%   BACK-UP: CMOS Column parallel readout
 
   \begin{frame}[plain]
     \frametitle{Column parallel readout}
@@ -1974,8 +2072,7 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: MAPS principle
-%-------------------------------
+%   BACK-UP: CMOS MAPS principle
 
   \begin{frame}[plain]
     \frametitle{MAPS principle}
@@ -1986,16 +2083,8 @@
   \end{frame}
 
 
-  \begin{frame}[plain]
-    \frametitle{Young Modulus}
-
-    \begin{center}
-      \includegraphics[width = \textwidth]{Pictures/youngModulus_vs_radiationLength-004.jpg}
-    \end{center}
-  \end{frame}
 %-------------------------------
-%   BACK-UP: Spatial resolution VS pitch
-%-------------------------------
+%   BACK-UP: CMOS Spatial resolution VS pitch
 
   \begin{frame}[plain]
     \frametitle{Spatial resolution for different pitch (IPHC-Strasbourg)}
@@ -2007,8 +2096,7 @@
   \end{frame}
 
 %-------------------------------
-%   Threshold scan + noise and offset 
-%-------------------------------
+%   BACK-UP: CMOS Threshold scan + noise and offset 
 
 \begin{frame}[plain]
   \frametitle{Characterization of one sensor}
@@ -2050,36 +2138,42 @@
   \end{tikzpicture}
 \end{frame}
 
+%-------------------------------
+%   BACK-UP: Test Beam 
+%-------------------------------
+%   BACK-UP: Correction deviations 28 degrees 
 
-  %\begin{frame}
-  %  \frametitle{Correction of the deviations between real hits and extrapolated ones}
-  %
-  %  \vspace{-0.35cm}
-  %  \begin{center}
-  %    \begin{columns}[t]
-  %      \begin{column}{4cm}
-  %        \centering
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUV_8_corrected1.png}
-  %        \
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaUU_8_corrected1.png}
-  %      \end{column}
-  %      \begin{column}{4cm}
-  %        \centering
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaVU_8_corrected1.png}
-  %        \
-  %        \includegraphics[width = 1.2\textwidth]{Pictures/deltaU_8_corrected1.png}
-  %      \end{column}
-  %    \end{columns}
-  %    %\includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6_corrected.png}
-  %  \end{center}
-  %
-  %  \vspace{-0.35cm}
-  %  \centering{Spatial residual obtained after correction: }
-  %
-  %  \vspace{-0.15cm}
-  %  \centering{$\sigma_U \simeq 5.9~\mu\text{m}$ instead of $ \sigma_U \simeq 6.1~\mu\text{m}$}
-  %\end{frame}
+  \begin{frame}
+    \frametitle{Correction of the deviations between real hits and extrapolated ones}
+  
+    \vspace{-0.35cm}
+    \begin{center}
+      \begin{columns}[t]
+        \begin{column}{4cm}
+          \centering
+          \includegraphics[width = 1.2\textwidth]{Pictures/deltaUV_8_corrected1.png}
+          \
+          \includegraphics[width = 1.2\textwidth]{Pictures/deltaUU_8_corrected1.png}
+        \end{column}
+        \begin{column}{4cm}
+          \centering
+          \includegraphics[width = 1.2\textwidth]{Pictures/deltaVU_8_corrected1.png}
+          \
+          \includegraphics[width = 1.2\textwidth]{Pictures/deltaU_8_corrected1.png}
+        \end{column}
+      \end{columns}
+      %\includegraphics[width = 10cm]{Pictures/RsAlign_226057_pl6_corrected.png}
+    \end{center}
+  
+    \vspace{-0.35cm}
+    \centering{Spatial residual obtained after correction: }
+  
+    \vspace{-0.15cm}
+    \centering{$\sigma_U \simeq 5.9~\mu\text{m}$ instead of $ \sigma_U \simeq 6.1~\mu\text{m}$}
+  \end{frame}
 
+%-------------------------------
+%   BACK-UP: Kink angle 
 
   \begin{frame}
     \frametitle{Kink angle measurement between 1 and 4 GeV}
@@ -2103,28 +2197,11 @@
   \end{frame}
 
 
-
 %-------------------------------
-%   BACK-UP: Physics
-%-------------------------------
-
-  \begin{frame}[plain]
-    \frametitle{Higgs Strahlung kinematics}
-
-    \[ E_H = \frac{s - \rm{M}_Z^2 + \rm{M}_H^2}{2\sqrt{s}} \]
-    \[ E_Z = \frac{s - \rm{M}_H^2 + \rm{M}_Z^2}{2\sqrt{s}} \]
-    \[ | \overrightarrow{p_H} | = | \overrightarrow{p_Z} | = \frac{\sqrt{\left[ s - (\rm{M}_H + \rm{M}_Z)^2 \right] \cdot \left[s - (\rm{M}_H - \rm{M}_Z)^2 \right]}}{2\sqrt{s}} \]
-
-    If $\rm{M}_H = 125~\rm{GeV}$, $\rm{M}_Z = 91.2~\rm{GeV}$ and $\sqrt{s} = 350~\rm{GeV}$, then:
-    \[ E_H \simeq 185.4~\rm{GeV} \]
-    \[ E_Z \simeq 164.6~\rm{GeV} \]
-    \[  | \overrightarrow{p_H} | = | \overrightarrow{p_Z} | \simeq 68.5~\rm{GeV}\]
-
-  \end{frame}
-
+%   BACK-UP: ILC
 %-------------------------------
 %   BACK-UP: ILC-ILD
-%-------------------------------
+
   \begin{frame}[plain]
     \frametitle{Detector performances}
 
@@ -2143,8 +2220,8 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: PFA
-%-------------------------------
+%   BACK-UP: ILC PFA
+
   \begin{frame}[plain]
     \frametitle{Particle Flow Algorithm}
 
@@ -2171,8 +2248,8 @@
   \end{frame}
 
 %-------------------------------
-%   BACK-UP: WHY LINEAR COLLIDER
-%-------------------------------
+%   BACK-UP: ILC WHY LINEAR COLLIDER
+
   \begin{frame}[plain]
     \frametitle{Why a linear collider?}
 
@@ -2196,9 +2273,13 @@
 
 %-------------------------------
 %   BACK-UP: ILC INTERACTION REGION
-%-------------------------------
+
   \begin{frame}[plain]
     \frametitle{ILC interaction region}
+
+    \begin{center}
+      \includegraphics[width = 0.3\textwidth]{Pictures/ILC_Hall.png}
+    \end{center}
 
     \begin{itemize}
       \item 1 interaction region for 2 detectors
@@ -2214,7 +2295,7 @@
 
 %-------------------------------
 %   BACK-UP: ILC ENVIRONMENT
-%-------------------------------
+
   \begin{frame}[plain]
     \frametitle{ILC environment}
 
@@ -2232,14 +2313,8 @@
 
   \end{frame}
 
-\begin{frame}[plain,label=Xsec]
-  \frametitle{Higgs production cross-section}
-
-  \begin{center}
-    \includegraphics[width = 0.7\textwidth]{Pictures/higgs_xsec_P-8_3.png}
-  \end{center}
-\end{frame}
-
+%-------------------------------
+%   BACK-UP: ILC-ILD Overview
 
 \begin{frame}[plain]
     \frametitle{Overview of the ILD}
@@ -2249,33 +2324,6 @@
     \end{center}
 \end{frame}
 
-\begin{frame}[plain,label=cuts]
-  \frametitle{Sequential cuts strategy}
-      \begin{enumerate}
-          \item [cut0:] Number of isolated lepton (niso): niso = 0 %-1 < niso < 1
-          \item [cut1:] Transverse Momentum visible (Ptvis): 35 < $\rm{P_{t}^{vis}}$ < 155 GeV
-          \item [cut2:] Visible mass (mvis): 95 < $\rm{m_{vis}}$ < 140 GeV
-          \item [cut3:] Angle between the momentum axis of both jets ($\cos{\alpha}$): -1 < $\cos{\alpha}$ < 0.22
-          \item [cut4:] Number of reconstructed particle 
-          \item [cut5:] D2YM
-          \item [cut6:] Visible longitudial momentum ($\rm{abs(P_{z}^{vis})}$)
-          \item [cut7:] $\rm{E_{miss}}$
-      \end{enumerate}
-\end{frame}
-
-%-------------------------------
-%   BACK-UP: ILC Polarisation
-%-------------------------------
-  \begin{frame}[plain]
-    \frametitle{Beam polarisation}
-
-    \begin{block}{Simulated data: $100~\%$ left or right events}
-      \footnotesize{
-      \[ \sigma_{P_{(e^+,e^-)}} = \left( \frac{1-P_{e^-}}{2} \right) \left( \frac{1+P_{e^+}}{2} \right) \sigma_{RL} + \left( \frac{1+P_{e^+}}{2} \right) \left( \frac{1-P_{e^-}}{2} \right) \sigma_{LR} \]
-      \[ \sigma_{P_{(e^+,e^- = 0.3, -0.8)}} = 0.585 \cdot \sigma{RL} + 0.035 \cdot \sigma_{LR} \]
-      }
-    \end{block}
-  \end{frame}
 
 
    % \begin{frame}[plain]
@@ -2288,31 +2336,6 @@
    %             \[ \sigma (1/p) \ = \ 2x10^{-5} (GeV^{-1})\]
    %         \item Jet ernergy
    %             \[\sigma_E / E \ = \ 0.3/\sqrt{E(GeV)}\]
-   %     \end{itemize}
-   % \end{frame}
-
-   % \begin{frame}[plain]
-   %     \frametitle{Particle Flow Algorithm}
-
-   %     \begin{itemize}
-   %         \item Typical jet:
-   %             \begin{itemize}
-   %                 \item Charged hadrons $\simeq \ 60 \%$
-   %                 \item Photons $\simeq \ 30 \%$
-   %                 \item Neutral $\simeq \ 10 \%$
-   %             \end{itemize}
-   %         \item Standard approch
-   %             \begin{itemize}
-   %                 \item All jet components energy measured in ECAL/HCAL
-   %                 \item $E_{jet} = E_{ECAL} + E_{HCAL}$
-   %             \end{itemize}
-   %         \item Particle flow calorimetry
-   %             \begin{itemize}
-   %                 \item Measurement of charged particles in tracker
-   %                 \item Measurement of photon in ECAL
-   %                 \item Measurement of hadrons in HCAL
-   %                 \item $E_{jet} = E_{Track} + E_{\gamma} + E_n$
-   %             \end{itemize}
    %     \end{itemize}
    % \end{frame}
 
@@ -2347,21 +2370,6 @@
    %     \end{columns}
 
    % \end{frame}
-
-   % \begin{frame}[plain]
-   %     \frametitle{ZH production}
-
-   %     Z boson will decay yo:
-   %     \begin{itemize}
-   %         \item Charged leptons $\simeq 10 \%$
-   %         \item Neutrinos $\simeq 20 \%$
-   %         \item Hadrons $\simeq 70\%$
-   %     \end{itemize}
-
-   %     Hadronic decay channel has large statistics but model dependency and large background
-   % \end{frame}
- %\againframe<2->[noframenumbering]{signalReconstruction}
-
     \setcounter{framenumber}{\thelastframe}
 
 \end{document}
