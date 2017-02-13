@@ -180,11 +180,12 @@
             \includegraphics[width = 2cm, height = 2cm]{Pictures/DESY-Logo.png}
         \end{column}
 
-        \begin{column}{3cm}
-            \includegraphics[width = 3cm, height = 2cm]{Pictures/logo_IPHC_10cm.png}
+        \begin{column}{2.5cm}
+            \includegraphics[width = 2.5cm, height = 2cm]{Pictures/logo_IPHC_10cm.png}
         \end{column}
-        \begin{column}{3cm}
-            \includegraphics[width = 3cm, height = 2cm]{Pictures/logo_uni_stra.jpg}
+        \begin{column}{3.5cm}
+            %\includegraphics[width = 3cm, height = 2cm]{Pictures/logo_uni_stra.jpg}
+            \includegraphics[width = 3.5cm, height = 2cm]{Pictures/logo_P&i_Fac.png}
         \end{column}        
         \begin{column}{3cm}
             \includegraphics[width = 3cm, height = 1.5cm]{Pictures/logo_plume.png}
@@ -199,7 +200,7 @@
     \tableofcontents[subsectionstyle=hide]
   \end{frame}
 
-  \section{Introduction}
+  \section{Future of particle physics}
     \subsection{Standard Model}
 
     %\begin{frame}
@@ -259,7 +260,7 @@
         \end{itemize}
       
       \begin{center}
-        $\Rightarrow$ Complete spectrum of Standard Model that could be correct up to very high energies
+        $\Rightarrow$ Complete spectrum of the Standard Model that could be correct up to very high energies
       \end{center}
      %\end{block}
 
@@ -279,8 +280,8 @@
 
       \begin{alertblock}{Limitations}
         \begin{itemize}
-          \item Why electroweak symmetry is broken?
-          \item Is there only one Higgs boson as defined in SM?
+          \item Why the electroweak symmetry is broken?
+          \item Is there only one Higgs boson as defined in the SM?
           \item Why are they 3 generations of leptons and quarks?
           \item Neutrino oscillation (theory does not predict mass of neutrino)
           \item What are the dark matter and the dark energy?
@@ -360,7 +361,7 @@
       \begin{column}{4cm}
         \centering
 
-        \includegraphics[width =\textwidth]{Pictures/cern-lhc-aerial.jpg}
+          \includegraphics[width =\textwidth]{Pictures/lhc_sousterrain_schema.jpg}
       \end{column}
 
       \begin{column}{6cm}
@@ -382,7 +383,7 @@
 
     \uncover<2>{
       \vspace{0.3cm}
-      \centering{\textbf{$\Rightarrow$ Need complementary experimental program}}
+      \centering{\textbf{$\Rightarrow$ Need a complementary experimental program}}
     }
 
   \end{frame}
@@ -394,7 +395,7 @@
 %-------------------------------
 
   \begin{frame}
-    \frametitle{International Linear Collider}
+    \frametitle{International Linear Collider (ILC)}
 
     \vspace{-0.3cm}
     \begin{columns}[c]
@@ -429,7 +430,7 @@
     \begin{column}{5cm}
       \includegraphics[width = 5cm, height = 2.9 cm]{Pictures/ILC_SiD.jpg}
       \vspace{-0.25cm}
-      \begin{block}{Silicon Detector}
+      \begin{block}{Silicon Detector (SiD)}
         \footnotesize{
         \begin{itemize}
           \item Silicon tracking \\ (radius = 1.2 m)
@@ -442,7 +443,7 @@
     \begin{column}{5cm}
       \includegraphics[width = 5cm, height = 2.9 cm]{Pictures/ILD_all_110826.jpg}
       \vspace{-0.25cm}
-      \begin{block}{International Large Detector}
+      \begin{block}{International Large Detector (ILD)}
         \footnotesize{
         \begin{itemize}
           \item TPC + silicon envelope \\ (radius = 1.8 m)
@@ -467,6 +468,14 @@
 \begin{frame}
   \frametitle{Particle Flow Algorithm}
 
+    \begin{columns}[t]
+      \begin{column}{3cm}
+        Tracking system
+      \end{column}
+      \begin{column}{3cm}
+        Calorimeters
+      \end{column}
+    \end{columns}
   \begin{center}
     \includegraphics[width = 0.5\textwidth]{Pictures/ild_particleFlowConcept.png}
   \end{center}
@@ -505,7 +514,7 @@
         \end{column}
         \begin{column}{5cm}
           \centering
-          \begin{alertblock}{Missing measurements}
+          \begin{alertblock}{Recall the footprint of SM-Higgs}
             \begin{itemize}
               \item Couplings of Higgs boson to $c$-quarks and gluons
               \item Higgs self-coupling 
@@ -714,10 +723,14 @@
 
 \begin{frame}
   \frametitle{Distribution of the visible invariant mass with background}
+  \vspace{-0.3cm}
   \begin{center}
     $\sqrt{s} = 350~\text{GeV}$, luminosity: $250~\text{fb}^{-1}$ and polarisation: e$^-_L$, e$^+_R$
     \includegraphics[width = \textwidth]{Pictures/mVis_all.png}
+
+    Background: $1.88 \cdot 10^7$ events; signal: $2.25 \cdot 10^4$ events
   \end{center}
+
   
   \begin{tikzpicture}[overlay,remember picture, red, shift={(current page.south west)}]
     \begin{scope}
@@ -826,7 +839,7 @@
 %                           PLUME Project
 %-------------------------------
 
-\section{Double-sided layers development}
+\section{Double-sided layers development: PLUME project}
 \begin{frame}
   \frametitle{Outlines}
   \begin{minipage}{\textwidth}
@@ -869,7 +882,7 @@
   \begin{alertblock}{Impact parameter resolution}
       \centering{ $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{2/2} \theta}$}
     \begin{itemize}
-      \item Hit resolution: $a \simeq 4~\mu m \Rightarrow ~ \sigma_{spatial} < 3~\mu m$
+      \item Hit resolution: $a \simeq 5~\mu m \Rightarrow ~ \sigma_{spatial} < 3~\mu m$
       \item Multiple scattering: $b \simeq 9 - 15~\mu m \Rightarrow$ material budget per measurement point $\simeq 0.15~\%$ X$_0$ 
     \end{itemize}
   \end{alertblock}
@@ -887,8 +900,9 @@
         \centering
         \begin{itemize}
           \item 1 mechanical structure for \\ 2 measurement points
-          \item Alignment
+          \item Pattern recognition and alignment
           \item Possibility to use 2 different technologies
+          \item Air cooling system
         \end{itemize}
       \end{column}
     \end{columns}
@@ -944,9 +958,9 @@
 
   \begin{block}{Goals}
     \begin{itemize}
-      \item Reach a constraint material budget < $0.3~\%$ X$_0$
+      \item Reach the expected material budget of $ \lesssim 0.3~\%$ X$_0$
       \item Study the added values of double-sided measurement
-      \item Study the mechanical structure and its impact on sensors' performance
+      \item \only<1>{Study the mechanical structure and its impact on sensors' performance} \only<2>{\textbf{Study the mechanical structure and its impact on sensors' performance}}
     \end{itemize}
   \end{block}
 
@@ -1002,9 +1016,9 @@
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{itemize}
-        \item $2~\text{mm}$ SiC foam
         \item $50~\mu\text{m}$ CMOS pixel sensor
         \item $100~\mu\text{m}$ flex-cable
+        \item $2~\text{mm}$ SiC foam (4 - $8~\%$ )
         \item Air-flow cooling system
       \end{itemize}
     \end{column}
@@ -1162,10 +1176,10 @@
 %-------------------------------
   %\subsection{Test Beam @ SPS}
   \begin{frame}
-    \frametitle{Test of the first fully functional prototype}
+    \frametitle{Test of PLUME-1}
     %\frametitle{Test beam @ SPS with 120 GeV $\pi^-$ in November 2011}
 
-    \vspace{-0.5cm}
+    \vspace{-0.7cm}
     \begin{columns}[t]
       \begin{column}{4cm}
         \begin{center}
@@ -1179,7 +1193,7 @@
           \begin{itemize}
             \item CERN-SPS with 120 GeV $\pi^{-}$
             \item Reference plane: 4 MIMOSA-26
-            \item DUT: first double-sided ladder equipped with 12 MIMOSA-26 sensors
+            \item DUT: PLUME-1 first fully functional double-sided ladder equipped with 12 MIMOSA-26 sensors ($0.65~\%$ X$_0$)
             \item Ladder performance studies with different configurations
           \end{itemize}
           }
@@ -1213,7 +1227,7 @@
         \begin{center}
           \includegraphics[width = 4cm,height = 3.9cm]{Pictures/tb_cern_11_sketch_normal.pdf}
 
-          \footnotesize{\textbf{Module perpendicular to the beam.}}
+          \footnotesize{\textbf{Module in normal incidence to the beam}}
         \end{center}
       \end{column}
 
@@ -1222,7 +1236,7 @@
           \includegraphics[width = 4cm,height = 4.1cm]{Pictures/tb_cern_11_sketch_tilted.pdf}
 
           \vspace{-0.2cm}
-          \footnotesize{\textbf{Module tilted (between 28\degres and 40\degres).}}
+          \footnotesize{\textbf{Module tilted (between 28\degres and 40\degres)}}
         \end{center}
       \end{column}
 
@@ -1230,16 +1244,16 @@
         \begin{center}
           \includegraphics[width = 4cm,height = 4.0cm]{Pictures/tb_cern_11_sketch_tilted120mm.pdf}
 
-          \footnotesize{Module tilted ($\simeq$ 60\degres).}
+          \footnotesize{Module tilted ($\simeq$ 60\degres)}
         \end{center}
       \end{column}
     \end{columns}
 
     \vspace{0.1cm}
-    \footnotesize{$\Rightarrow$ Study track-hit residual and the distribution of this residual as a function of the relative position of the beam on the sensor.
+    \footnotesize{$\Rightarrow$ Study track-hit residual and the distribution of this residual as a function of the relative position of the beam on the sensor
 
     \vspace{0.1cm}
-    \centering{\textbf{Analysis performed with TAF (TAPI Analysis Framework). }}}
+    \centering{\textbf{Analysis performed with TAF (TAPI Analysis Framework) }}}
     %\grille
 \end{frame}
 
@@ -1247,7 +1261,7 @@
 %                           RUN Normal incidence
 %-------------------------------
 \begin{frame}
-  \frametitle{Module perpendicular to the beam}
+  \frametitle{Module in normal incidence to the beam}
 
   \begin{center}
     \includegraphics[width = 0.7\textwidth, height = 5cm]{Pictures/tb_cern_11_sketch_normal.pdf}
@@ -1255,7 +1269,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Module perpendicular to the beam}
+  \frametitle{Module in normal incidence to the beam}
 
   \vspace{-0.2cm}
   \centering{Threshold 6 $\sigma$, air flow speed < 5m/s and 1.8M events.}
@@ -1511,7 +1525,7 @@
         \end{tabular}
       \end{center}
       \vspace{-0.35cm}
-      \centering{$\sigma_{tel} = 2.2 \mu m$ for 36\degres and $\sigma_{tel} = 18.8 \mu m$ for 60\degres.}
+      \centering{$\sigma_{tel} = 2.2~\mu\text{m}t$ for 36\degres and $\sigma_{tel} = 18.8~\mu\text{m}$ for 60\degres.}
     \end{block}
 
   \end{frame}
@@ -1544,7 +1558,7 @@
           \end{itemize}
           \vspace{-0.1cm}
           \centering
-            \[ \theta_0 = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
+            \[ \sigma_{\theta_0} = \frac{13.6 (MeV)}{p}\left( \frac{x}{X_0}\right)^{0.555}\]
         \end{column}
         \begin{column}{6cm}
           \centering
@@ -1559,7 +1573,7 @@
       \begin{itemize}
         \item Key parameter for tracking algorithm: has to take into account multiple scattering and energy degradation
         \item Compare material budget prediction to its result after construction
-        \item Goal: mapping in $uv$ of X$_0$
+        \item Goal: surface mapping of $\frac{x}{X_0}$
       \end{itemize}
     \end{block}
   \end{frame} 
@@ -1567,7 +1581,7 @@
   \subsection{Test beam @ DESY}
 
   \begin{frame}
-    \frametitle{Test beam @ DESY with 5 GeV $e^-$ (April 2016)}
+    \frametitle{Test beam @ DESY with low energy $e^-$ (April 2016)}
     
     \begin{columns}[c]
       \begin{column}{5cm}
@@ -1579,15 +1593,14 @@
         \begin{itemize}
           \item Test Beam 21
           \item Reference plane: 4 EUDET telescope planes
+          \item DUT: PLUME-1 with a weighted material budget of $0.65~\%$ X$_0$
+          \item Energy: [1;5] GeV $\Rightarrow$ well suited for material budget measurement
           \item Goal: material budget measurement
         \end{itemize}
       \end{column}
     \end{columns}
   \end{frame}
 
-  \subsection{Theoretical estimation}
-  
- 
   \begin{frame}
     \frametitle{Kink angle measurement}
 
@@ -1662,7 +1675,7 @@
 
     \begin{block}{Total material budget}
       \centering 
-      Depends on flex-cable fill factor (25~\% or 30~\%)
+      Depends on flex-cable  metallic fill factor w.r.t. kapton (25~\% or 30~\%)
       $\Rightarrow \frac{\text{x}}{\text{X}_0} \simeq 0.498~-~0.515~\%~\text{X}_0$
       \\
       \only<2>{$\frac{\text{x}}{\text{X}_0}\left|_{measured} \simeq 0.47 \pm 0.02~\%~\text{X}_0 \right.$}
@@ -1709,14 +1722,14 @@
 
   \begin{block}{Context}
     \begin{itemize}
-      \item The ILC is the next colliding machine to study precisely EWSB (and other physics scenarios)
+      \item The ILC is the next colliding machine to study precisely electroweak symmetry breaking (and other physics scenarios)
       \item The Higgs boson will be more precisely characterised
-      \item Physics performance to achieve requires a new R\&D detector development 
+      \item Physics  requires a new R\&D detector development 
     \end{itemize}
   \end{block}
 
   \begin{block}{Higgs boson study}
-    To achieve a precision of $\sim 1~\%$ in the Higgs boson branching ratio measurement a simple sequential cuts is not the best option
+    Studying the $H\nu\nu$ final state is possible at the ILC, but to measure more precisely the Higgs boson branching ratio, a simple sequential hard cuts is not adapted
   \end{block}
 
   \vspace{-0.23cm}
@@ -1727,7 +1740,7 @@
   \frametitle{Conclusion 2/2}
 
     \begin{block}{PLUME development}
-    PLUME is the first double-sided layers developed according to the ILD requirements
+    PLUME is the first double-sided layers developed $\sim$ matching to the ILD requirements
     \begin{itemize}
       \item Impact of the mechanical structure
       \begin{itemize}
@@ -1737,7 +1750,7 @@
       \item Material budget
       \begin{itemize}
         \item Material budget is predicted from construction
-        \item Measurement of this material budget for PLUME-1 gives:
+        \item Confirmed by measurement for PLUME-1:
       \end{itemize}
     \end{itemize}
     \begin{center}
@@ -1754,7 +1767,7 @@
   \vspace{-0.25cm}
   \begin{block}{Test beam 2016}
     \begin{itemize}
-      \item Mapping in $uv$ of X$_0$
+      \item Surface mapping of $\frac{x}{X_0}$
       \item Study ladder performance at low energy
     \end{itemize}
   \end{block}
@@ -1767,9 +1780,9 @@
   \vspace{-0.15cm}
   \begin{block}{Next PLUME ladder}
     \begin{itemize}
-      \item Higher constraint on material budget ($0.3~\%$ X$_0$)
+      \item Material budget can still be improved: $\lesssim 0.3~\%$ X$_0$
       \item Enriching double-sided layer concept with sensors having different characteristics (fast integration time VS good spatial resolution)
-      \item Adapt sensor technology and cooling system to the \hyperlink{power-pulsing}{ILC beam structure}
+      \item Adapt sensor technology and cooling system to the \hyperlink{power-pulsing}{ILC beam structure} (power-pulsing)
     \end{itemize}
   \end{block}
 
@@ -1809,6 +1822,17 @@
 %-------------------------------
 %   BACK-UP: HIGGS PHYSICS
 %-------------------------------
+%   BACK-UP: HIGGS LAGRANGIAN
+
+  \begin{frame}[plain]
+    \frametitle{Standard Model Lagrangian}
+
+    \begin{center}
+      \includegraphics[width = 0.8\textwidth]{Pictures/SM_lagrangian.png}
+    \end{center}
+  \end{frame}
+
+%-------------------------------
 %   BACK-UP: HIGGS POTENTIAL
   
   \begin{frame}[plain]
@@ -1843,6 +1867,19 @@
     \begin{center}
       \includegraphics[width = 5cm]{Pictures/higgsbr.jpg}
     \end{center}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: Higgs Branching ratio
+  
+  \begin{frame}[plain]
+    \frametitle{Higgs branching ratio}
+
+    \[ BR(h \rightarrow A\overline{A}) = \Gamma(h \rightarrow A\overline{A})/\Gamma_h\]
+
+    \begin{itemize}
+      \item $\Gamma_h$: total rate of Higgs decay or the total width of the Higgs boson as a resonance
+    \end{itemize}
   \end{frame}
 
 %-------------------------------
@@ -1959,7 +1996,43 @@
         \includegraphics[width = \textwidth]{Pictures/plume_ladder2010_frontView.jpg}
       \end{column}
     \end{columns}
+
   \end{frame}
+
+%-------------------------------
+%   BACK-UP: PLUME-2 X0
+
+\begin{frame}[plain]
+  \frametitle{PLUME-2 material budget}
+
+  \begin{itemize}
+    \item Mi26 (x2): $0.106~\%$ X$_0$
+    \item Glue (x4): $0.04~\%$ X$_0$
+    \item Flex ($4~\%$) (x2): $0.112~\%$ X$_0$
+    \item SiC (x1): $0.092~\%$ X$_0$ 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+  \frametitle{Weigthed material budget}
+
+  \begin{center}
+  Ladder is made of sensitive and dead areas:
+
+  $\frac{x}{X_0}\left|_{weighted}\right. = \frac{x}{X_0} \cdot \text{area ponderation}$
+
+  area ponderation = sensitive surface $\times$ number of component + area of layer
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{PLUME material budget goal}
+
+  \begin{center}
+    \includegraphics[width = \textwidth]{Pictures/plumeGoal_MaterialBudget_weighted.png}
+  \end{center}
+\end{frame}
 
 %-------------------------------
 %   BACK-UP: PLUME FOAM
@@ -2138,12 +2211,42 @@
   \end{tikzpicture}
 \end{frame}
 
+\begin{frame}[plain]
+  \frametitle{Fixed Pattern Noise and Temporal Noise}
+  
+  \begin{block}{Fixed Pattern Noise}
+    \begin{itemize}
+      \item Non-uniformities of pixel response inside the pixels submatrices 
+      \item Offset which needs to be substracted from pixel's response in order to measure the signal
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Temporal Noise}
+    \begin{itemize}
+      \item Shot noise, thermal noise or $1/f$ noise
+      \item Depends on operation phase (reset, integration or readout)
+      \item Reset:
+      \begin{itemize}
+        \item Appears in 3T-like pixel designs when restoring charge $C_d$
+      \end{itemize}
+      \item Integration time:
+      \begin{itemize}
+        \item Leakage current diode (shot noise)
+      \end{itemize}
+      \item Readout:
+      \begin{itemize}
+        \item Source follower current and column switch
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 %-------------------------------
 %   BACK-UP: Test Beam 
 %-------------------------------
 %   BACK-UP: Correction deviations 28 degrees 
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Correction of the deviations between real hits and extrapolated ones}
   
     \vspace{-0.35cm}
@@ -2173,9 +2276,183 @@
   \end{frame}
 
 %-------------------------------
+%   BACK-UP: Polynomial orders 
+  \begin{frame}[plain]
+    \frametitle{Legendre polynomials order}
+    
+     \centering
+       \begin{tabular}{c c c c c}
+          \hline %----------------------------
+           & \multicolumn{2}{ c }{Front plane} & \multicolumn{2}{ c }{Back plane} \tabularnewline
+          \hline %----------------------------
+          Order & $\chi^2 \rm{/NDF}$ & $\sigma_{U}^{\rm{front}}$ & $\chi^2 \rm{/NDF}$ & $\sigma_{U}^{\rm{back}}$ \tabularnewline
+          \hline %----------------------------
+          \hline %----------------------------
+          3 & 21684/84 & 6.5 & 35575/72 & 13.3 \tabularnewline
+          4 & 1450/83 & 6.2 & 25130/71 & 12.4 \tabularnewline
+          5 & 1450/82 & 6.0 & 1719/70 & 6.9 \tabularnewline
+          6 & 654/81 & 5.9 & 1481/69 & 6.8 \tabularnewline
+          7 & 304/80 & 5.9 & 635/68 & 6.4 \tabularnewline
+          8 & 288/79 & 5.9 & 269/67 & 6.2 \tabularnewline
+          9 & 225/78 & 5.9 & 251/66 & 6.2 \tabularnewline
+          10 & 225/77 & 5.9 & 152/65 & 6.2 \tabularnewline
+          11 & 158/76 & 5.9 & 132/64 & 6.2 \tabularnewline
+          \hline %----------------------------
+         \end{tabular}
+
+  \end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Two points measurement combination}
+
+    \begin{center}
+        \includegraphics[width = 9 cm]{Pictures/mini_vectors.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Spatial residual}
+    
+    \vspace{-0.2cm}
+    \centering{Study of two planes in normal incidence (w.r.t the beam axis)}
+
+    \vspace{-0.65cm}
+    \begin{columns}[t]
+        \begin{column}{6cm}
+            \begin{center}
+                \includegraphics[width = 6cm]{Pictures/hxtxFront_226056.png}
+            \end{center}
+        \end{column}
+        \begin{column}{6cm}
+            \begin{center}
+                \includegraphics[width = 6cm]{Pictures/hxtxBack_226056.png}
+            \end{center}
+        \end{column}
+    \end{columns}
+
+    \vspace{-0.2cm}
+    \begin{block}{Combination of the residuals information}
+      \[
+        \begin{array}{rl}
+            \sigma_m^2 &= \frac{\sigma^2_{front} + \sigma^2_{back}}{4} + \sigma^2_{tel} \\
+            \sigma_m &\simeq 3.4 \mu m \\
+        \end{array}
+      \]
+      \begin{center}
+            $ \Rightarrow \sigma_{resolution} = \sqrt{\sigma^2_{m} - \sigma^2_{tel}} \simeq 2.9 \mu m $
+            with $\sigma_{tel} \ \simeq \ 1.8 \mu m$
+      \end{center}
+    \end{block}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Mini-vector spatial residual}
+
+    \vspace{-0.2cm}
+    \begin{center}
+        \includegraphics[width = 9cm]{Pictures/hDiffPosX_226056.png}
+        
+        $\sigma_{measured} \simeq 3.2 \mu m (\sigma_{expected} \simeq 3.4 \mu m)$
+        $\sigma_{resolution} \simeq 2.7 \mu m (\sigma_{resolution \ expected} \simeq 2.9 \mu m)$ 
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Estimation of the angular resolution}
+
+    \only<1>{
+    \begin{center}
+        \includegraphics[width = 8 cm]{Pictures/mini_vectors.pdf}
+    \end{center}     
+        
+    }
+    \vspace{-0.3cm}
+    \only<1->{\begin{block}{Estimation of the angular resolution}
+        \begin{columns}[t]
+            \begin{column}{6cm}
+             \[
+              \begin{array}{rl}
+                  %\sigma_{\theta} &= \frac{\sigma_{s1} + \sigma_{s2}}{d} \\
+                  \sigma_{\theta} &= \frac{\sqrt{\sigma_{s1}^2 + \sigma_{s2}^2}}{d} \\
+                  \sigma_{\theta} &\simeq 0.146\degres \\
+              \end{array}
+             \]
+             \end{column}
+            \begin{column}{6cm}
+                  \[ with \ \sigma_{s1} \ = \ \sigma_{s2} \ \simeq 3.6 \ \mu m\]
+            \end{column}
+       \end{columns}
+    \end{block}}
+    \only<2>{
+    \begin{center}
+        \begin{columns}[t]
+            \begin{column}{7cm}
+                \includegraphics[width = 7cm]{Pictures/hDiffAngleX_226056.png}
+            \end{column}
+            \begin{column}{4cm}
+                \vspace{-5cm}
+               \begin{alertblock}{Angular resolution}
+                    Can not be simply quoted by a Gaussian standard deviation
+               \end{alertblock}
+            \end{column}
+        \end{columns}
+    \end{center}
+    }
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Origin of these peaks}
+
+    \vspace{-0.3cm}
+    \begin{itemize}
+        \item Cluster position determined by its centre of gravity %: if only 1 pixel hit is considered in the center of the pixel 
+        \item Angle distribution is dependent of the cluster size taken into account
+    \end{itemize}
+
+    \vspace{-0.2cm}
+    \begin{columns}[b]
+       \begin{column}{4cm}
+        \begin{center}
+            
+            \scriptsize{Cluster of 1 pixel on each side}
+    
+            \only<1>{\includegraphics[width = 4cm]{Pictures/cluster1x1_jerome.png}}
+            \only<2>{\includegraphics[width = 4 cm]{Pictures/hDiffAngleX11_226056.png}}
+            
+%            Distance between 2 pixels: 18.4 $\mu$m
+%
+%            $\Rightarrow$ 0.53 \degres deviation
+        \end{center}
+       \end{column}
+
+       \begin{column}{4cm}
+         \begin{center}
+            \scriptsize{Cluster of 2 pixels on one side, 1 pixel on the other}
+            
+            \only<1>{\includegraphics[width = 4cm]{Pictures/cluster1x2_jerome.png}}
+            \only<2>{\includegraphics[width = 4 cm]{Pictures/hDiffAngleX21_226056.png}}
+        \end{center}
+       \end{column}
+
+       \begin{column}{4cm}
+        \begin{center}
+            \scriptsize{Cluster > 2px on each side}
+            
+            \only<1>{\includegraphics[width = 4cm]{Pictures/cluster2x2_jerome.png}}
+            \only<2>{\includegraphics[width = 4 cm]{Pictures/hDiffAngleXg1g1_226056.png}}
+        \end{center}
+
+       \end{column}
+    \end{columns}
+
+\end{frame}
+
+
+%-------------------------------
 %   BACK-UP: Kink angle 
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Kink angle measurement between 1 and 4 GeV}
 
     \begin{block}{Fitted kink angle distributions}
@@ -2200,6 +2477,33 @@
 %-------------------------------
 %   BACK-UP: ILC
 %-------------------------------
+%   BACK-UP: ILC-accelerators
+
+  \begin{frame}[plain]
+    \frametitle{Luminosity and centre-of-mass energy for different colliders}
+
+    \begin{center}
+      \includegraphics[width = 0.9\textwidth]{Pictures/colliders_ee-pp.png}
+    \end{center}
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: ILC-ILD other detectors
+  
+  \begin{frame}[plain]
+    \frametitle{Other technologies for the ILD-VXD}
+
+    \begin{block}{SOI}
+    \end{block}
+
+    \begin{block}{FPCCD}
+    \end{block}
+
+    \begin{block}{DEPFETH}
+    \end{block}
+  \end{frame}
+
+%-------------------------------
 %   BACK-UP: ILC-ILD
 
   \begin{frame}[plain]
@@ -2217,6 +2521,60 @@
       \[\sigma_E / E \ = \ 0.3/\sqrt{\rm{E(GeV)}}\]
     \end{block}
 
+  \end{frame}
+ 
+
+%-------------------------------
+%   BACK-UP: ILC impact parameter
+
+  \begin{frame}[plain]
+    \frametitle{Impact parameter}
+
+    \begin{block}{Resolution on the impact parameter}
+      \centering
+      $\sigma_{r\phi} \simeq \sigma_{rz} \simeq a \oplus \frac{b}{p \cdot sin^{2/2} \theta}$
+    \end{block}
+    
+    \begin{block}{Parameter a}
+      \centering
+      $ a = \sigma_{s.p} \frac{R_{int} \oplus R_{out}}{R_{ext}-R_{int}}$
+      \begin{itemize}
+        \item $R_{int}$: radius of the inner layer
+        \item $R_{out}$: radius of the outter layer
+        \item $\sigma_{s.p}$: single pointing resolution
+      \end{itemize}
+    \end{block}
+    \begin{block}{Parameter b}
+      \centering
+      $ b = R_{int}\frac{13.6(MeV)}{\beta c}\cdot Z \cdot \sqrt{\frac{x}{X_0}} \left[ 1 + 0.036 \cdot \ln{\left( \frac{x}{X_0 \sin{\theta}}\right)} \right]$
+      \begin{itemize}
+        \item $Z$: charge of incoming particle
+        \item $\frac{x}{X_0 \sin{\theta}}$: material crossed by particle
+        \item $R_{int}$: distance of the inner layer to the IP
+      \end{itemize}
+    \end{block}
+
+  \end{frame}
+
+%-------------------------------
+%   BACK-UP: ILC impact parameter
+
+  \begin{frame}[plain]
+    \frametitle{Impact parameter for various colliders}
+
+    \centering
+    \begin{tabular}{c c c}
+    \hline
+    Collider & $a~(\mu\text{m})$ & $b~(\mu\text{m GeV/c})$ \tabularnewline
+    \hline
+    \hline
+    LEP & 25 & 70 \tabularnewline
+    SLC & 8 & 33 \tabularnewline
+    LHC & 12 & 70 \tabularnewline
+    RHIC & 13 & 19 \tabularnewline
+    ILC & $\leq~5$ & $\leq~10$ \tabularnewline
+    \hline
+    \end{tabular}
   \end{frame}
 
 %-------------------------------
@@ -2296,7 +2654,7 @@
 %-------------------------------
 %   BACK-UP: ILC ENVIRONMENT
 
-  \begin{frame}[plain]
+  \begin{frame}[plain,label=power-pulsing]
     \frametitle{ILC environment}
 
     \begin{center}
@@ -2324,6 +2682,19 @@
     \end{center}
 \end{frame}
 
+%-------------------------------
+%   BACK-UP: SUPERKEKB
+
+  \begin{frame}[plain]
+    \frametitle{SuperKEKB collier}
+
+    \begin{itemize}
+      \item Asymmetric beams: $e^-$: 7 GeV, $e^+$: 4 GeV
+      \item Collision with $E_{cm}$ around Y(4S) and Y(5S)
+      \item BEAST-II = collider commisioning 
+      \item Validation of the simulation of the background induced by SuperKEKB
+    \end{itemize}
+  \end{frame}
 
 
    % \begin{frame}[plain]
